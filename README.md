@@ -5,7 +5,7 @@
 ```sh
 ┌──────────────────────────────────────────┐       ┌─────────────────────────┐       ┌───────────┐       ┌──────────┐
 |                                          |       |                         |       |           |       |          |
-|  @langnang-temp/langnang-temp.github.io  | ====> |  @langnang-temp/node  | ====> |  develop  | ====> |  master  |
+|  @langnang-temp/langnang-temp.github.io  | ====> |   @langnang-temp/node   | ====> |  develop  | ====> |  master  |
 |           Sync from template             |       |     Sync to remote      |       |           |       |          |
 └──────────────────────────────────────────┘       └─────────────────────────┘       └───────────┘       └──────────┘
 ```
