@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  repo-sync:
+  repo-sync-template:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -21,4 +21,18 @@ jobs:
           source_repo: "langnang-temp/node"
           source_branch: "@langnang-temp/node"
           destination_branch: "@langnang-temp/node"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - name: repo-sync
+        uses: repo-sync/github-sync@v2
+        with:
+          source_repo: "langnang-temp/vuepress"
+          source_branch: "@langnang-temp/vuepress"
+          destination_branch: "@langnang-temp/vuepress"
           github_token: ${{ secrets.GITHUB_TOKEN }}

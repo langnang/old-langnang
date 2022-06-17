@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - "@langnang-temp/vuepress"
+
 jobs:
   sync-branch:
     runs-on: ubuntu-latest
