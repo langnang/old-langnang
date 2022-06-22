@@ -10,7 +10,7 @@ const plugin = (options = {}, ctx) => {
   } = options;
 
   return {
-    name: 'vuepress-plugin-github-file',
+    name: '@langnang/vuepress-plugin-github-file',
     async additionalPages(app) {
       const { base, ClientComputedMixinm, isProd, markdown, options, pages } = app;
       let addPages = [];

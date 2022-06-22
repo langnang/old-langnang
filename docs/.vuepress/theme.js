@@ -23,9 +23,30 @@ module.exports = {
      */
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
-      { text: 'Config', link: '/Config/' },
-      { text: 'GitHub', link: 'https://github.com/langnang-temp/vuepress' },
+      { text: 'Guide', link: '/Guide' },
+      { text: '软件工具&服务', link: '/toolkit/', },
+      {
+        text: '计算机科学技术', items: [
+          {
+            text: '计算机科学技术基础', link: '/52010/', items: [
+              { text: '算法理论', link: '/52010/5201040/' },
+              { text: '数据结构', link: '/52010/5201050/' },
+              { text: '数据安全与计算机安全', link: '/52010/5201060/' },
+            ],
+          },
+          {
+            text: '计算机软件', link: '/52040/', items: [
+              { text: '软件理论', link: '/52040/5204010/', },
+              { text: '操作系统与操作环境', link: '/52040/5204020/', },
+              { text: '程序设计及其语言', link: '/52040/5204030/', },
+              { text: '数据库', link: '/52040/5204050/', },
+              { text: '软件开发环境与开发技术', link: '/52040/5204060/', },
+              { text: '软件工程', link: '/52040/5204070/', },
+            ],
+          },
+        ]
+      },
+      { text: 'GitHub', link: 'https://github.com/langnang/langnang' },
       {
         text: 'Vue', items: [
           { text: 'Vue', link: 'https://cn.vuejs.org/zh/' },
@@ -43,7 +64,10 @@ module.exports = {
      * @type Array | Object
      * @default undefined
      */
-    sidebar: 'auto'
+    sidebar: {
+      ...require('./../52010/sidebar.js'),
+      ...require('./../52040/sidebar.js'),
+    }
   },
   /**
    * 你可以通过 themeConfig.lastUpdated 选项来获取每个文件最后一次 git 提交的 UNIX 时间戳(ms)，同时它将以合适的日期格式显示在每一页的底部：
