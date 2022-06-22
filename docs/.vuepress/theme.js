@@ -27,6 +27,13 @@ module.exports = {
       { text: 'Config', link: '/Config/' },
       { text: 'GitHub', link: 'https://github.com/langnang-temp/vuepress' },
       {
+        text: 'Langnang', items: [
+          { text: 'Langnang', link: 'https://github.com/langnang/langnang' },
+          { text: 'Templates', link: 'https://github.com/langnang-temp/langnang-temp' },
+          { text: 'Packages', link: 'https://github.com/langnang-package/langnang-package' },
+        ]
+      },
+      {
         text: 'Vue', items: [
           { text: 'Vue', link: 'https://cn.vuejs.org/zh/' },
           { text: 'Vue Router', link: 'https://router.vuejs.org/zh/' },
