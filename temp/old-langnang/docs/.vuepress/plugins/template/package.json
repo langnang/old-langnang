@@ -1,0 +1,20 @@
+{
+  "name": "@langnang/vuepress-plugin-template",
+  "version": "0.0.1",
+  "description": "simple plugin template for vuepress",
+  "keywords": [
+    "documentation",
+    "generator",
+    "vue",
+    "vuepress",
+    "template"
+  ],
+  "license": "",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "vuepress": "^1.4.1"
+  }
+}

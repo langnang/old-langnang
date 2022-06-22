@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WEB 216 安全色</title>
+		<link rel="icon" href="../favicon.ico" />
+		<!-- 引入样式 -->
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css" />
+		<style type="text/css">
+			::-webkit-scrollbar {
+				width: 6px;
+				height: 4px;
+			}
+
+			::-webkit-scrollbar-thumb {
+				border-radius: 4px;
+				background-color: #cbcbcb;
+			}
+
+			::-webkit-scrollbar-track-piece {
+				background: #eee;
+			}
+		</style>
+		<style type="text/css">
+			.box-card span {
+				display: none;
+				color: white;
+			}
+
+			.box-card:hover span {
+				display: block;
+			}
+
+			.el-col__color {
+				padding: 3px 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="app">
+			<el-row :gutter="10" style="margin-left: 0; margin-right: 0">
+				<el-col :span="24">
+					<h1 style="text-align: center">WEB 216 安全色</h1>
+				</el-col>
+				<span v-for="(R,iR) in colors" :key="iR">
+					<span v-for="(G,iG) in colors" :key="iG">
+						<span v-for="(B,iB) in colors" :key="iB">
+							<el-col :span="4" class="el-col__color">
+								<el-card class="el-card__color" :style="{'background-color':'#'+R+G+B,'height':'100px'}"> </el-card>
+							</el-col>
+						</span>
+					</span>
+				</span>
+			</el-row>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+		<!-- 引入组件库 -->
+		<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+		<script type="text/javascript">
+			new Vue({
+				el: '#app',
+				data: {
+					colors: ['00', '33', '66', '99', 'CC', 'FF'],
+				},
+			});
+		</script>
+	</body>
+</html>

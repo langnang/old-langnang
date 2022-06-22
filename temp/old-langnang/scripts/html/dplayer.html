@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DPlayer</title>
+		<link rel="icon" href="../favicon.ico" />
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="dplayer" style="height: 100vh; width: 100vw"></div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/dplayer@1.26.0/dist/DPlayer.min.js"
+			integrity="sha256-OJg03lDZP0NAcl3waC9OT5jEa8XZ8SM2n081Ik953o4="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/hls.js@0.14.17/dist/hls.min.js"
+			integrity="sha256-S3paTMNp+/iH/AmHk1ePMI0LPh9Rxv21dl5bQz4d/Ik="
+			crossorigin="anonymous"
+		></script>
+		<script type="text/javascript">
+			function getUrlParam(name) {
+				var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)');
+				var r = window.location.search.substr(1).match(reg);
+				if (r != null) return unescape(r[2]);
+				return null;
+			}
+		</script>
+		<script>
+			const dp = new DPlayer({
+				container: document.getElementById('dplayer'), // 播放器容器元素
+				autoplay: true, // 自动播放
+				screenshot: true, // 截图
+				hotkey: true, // 热键
+				volume: 0.7,
+				video: {
+					url: getUrlParam('url'),
+					type: 'auto',
+				},
+			});
+		</script>
+	</body>
+</html>

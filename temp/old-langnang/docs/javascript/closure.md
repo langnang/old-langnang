@@ -1,0 +1,12 @@
+---
+{
+  "sidebar":"auto",
+  "reprintArticle":{
+    "github":{
+      "user":"wiliam2015",
+      "repo":"jsprototype",
+      "file":"闭包/index.md",
+    }
+  }
+}
+---

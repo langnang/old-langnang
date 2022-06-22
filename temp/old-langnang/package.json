@@ -1,0 +1,32 @@
+{
+  "name": "langnang",
+  "version": "1.0.0",
+  "description": "VuePress for langnang",
+  "author": "Langnang",
+  "scripts": {
+    "dev": "vuepress dev docs --temp .temp",
+    "build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/langnang/langnang"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-nprogress": "^1.8.2",
+    "@vuepress/plugin-pwa": "^1.8.2",
+    "axios": "0.21.1",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-code-switcher": "^1.1.0",
+    "vuepress-plugin-demo-code": "^0.5.2",
+    "vuepress-plugin-flowchart": "^1.4.3",
+    "vuepress-theme-chartjs": "^0.2.0"
+  },
+  "keywords": [
+    "langnang"
+  ],
+  "dependencies": {
+    "echarts": "^5.1.1",
+    "v-charts": "^1.19.0"
+  }
+}

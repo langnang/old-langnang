@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knowledge</title>
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+  </style>
+  <script type="text/javascript">
+    const know = [{
+      value: 1,
+      name: 'IT',
+      descr: 'IT',
+      children: [{
+        value: 1,
+        name: 'Web',
+        descr: 'Web',
+      },
+      {
+        value: 1,
+        name: 'HTML',
+        descr: 'HTML',
+      },
+      {
+        value: 1,
+        name: 'CSS',
+        descr: 'CSS',
+      },
+      {
+        value: 1,
+        name: 'JavaScript',
+        descr: 'JavaScript',
+        children: [{
+          value: 1,
+          name: 'JavaScript 对象',
+          descr: 'JavaScript 本地对象和内置对象',
+          children: [{
+            value: 1,
+            name: 'Array',
+            children: [{
+              value: 1,
+              name: 'concat()',
+              descr: '连接两个或更多的数组，并返回结果。',
+            }, {
+              value: 1,
+              name: 'join()',
+              descr: '把数组的所有元素放入一个字符串。元素通过指定的分隔符进行分隔。',
+            }, {
+              value: 1,
+              name: 'pop()',
+              descr: '删除并返回数组的最后一个元素',
+            }, {
+              value: 1,
+              name: 'push()',
+              descr: '向数组的末尾添加一个或更多元素，并返回新的长度。',
+            }, {
+              value: 1,
+              name: 'reverse()',
+              descr: '颠倒数组中元素的顺序。',
+            }, {
+              value: 1,
+              name: 'shift()',
+              descr: '删除并返回数组的第一个元素',
+            }, {
+              value: 1,
+              name: 'slice()',
+              descr: '从某个已有的数组返回选定的元素',
+            }, {
+              value: 1,
+              name: 'sort()',
+              descr: '对数组的元素进行排序',
+            }, {
+              value: 1,
+              name: 'splice()',
+              descr: '删除元素，并向数组添加新元素。',
+            }, {
+              value: 1,
+              name: 'toSource()',
+              descr: '返回该对象的源代码。',
+            }, {
+              value: 1,
+              name: 'toString()',
+              descr: '把数组转换为字符串，并返回结果。',
+            }, {
+              value: 1,
+              name: 'toLocaleString()',
+              descr: '把数组转换为本地数组，并返回结果。',
+            }, {
+              value: 1,
+              name: 'unshift()',
+              descr: '向数组的开头添加一个或更多元素，并返回新的长度。',
+            }, {
+              value: 1,
+              name: 'valueOf()',
+              descr: '返回数组对象的原始值',
+            }],
+          },
+          {
+            value: 1,
+            name: 'Boolean',
+            children: [],
+          },
+          {
+            value: 1,
+            name: 'Date',
+            children: [
+              { value: 1, name: 'Date()', descr: '返回当日的日期和时间。', },
+              { value: 1, name: 'getDate()', descr: '从 Date 对象返回一个月中的某一天 (1 ~ 31)。', },
+              { value: 1, name: 'getDay()', descr: '从 Date 对象返回一周中的某一天 (0 ~ 6)。', },
+              { value: 1, name: 'getMonth()', descr: '从 Date 对象返回月份 (0 ~ 11)。', },
+              { value: 1, name: 'getFullYear()', descr: '从 Date 对象以四位数字返回年份。', },
+              { value: 1, name: 'getYear()', descr: '请使用 getFullYear() 方法代替。', },
+              { value: 1, name: 'getHours()', descr: '返回 Date 对象的小时 (0 ~ 23)。', },
+              { value: 1, name: 'getMinutes()', descr: '返回 Date 对象的分钟 (0 ~ 59)。', },
+              { value: 1, name: 'getSeconds()', descr: '返回 Date 对象的秒数 (0 ~ 59)。', },
+              { value: 1, name: 'getMilliseconds()', descr: '返回 Date 对象的毫秒(0 ~ 999)。', },
+              { value: 1, name: 'getTime()', descr: '返回 1970 年 1 月 1 日至今的毫秒数。', },
+              { value: 1, name: 'getTimezoneOffset()', descr: '返回本地时间与格林威治标准时间 (GMT) 的分钟差。', },
+              { value: 1, name: 'getUTCDate()', descr: '根据世界时从 Date 对象返回月中的一天 (1 ~ 31)。', },
+              { value: 1, name: 'getUTCDay()', descr: '根据世界时从 Date 对象返回周中的一天 (0 ~ 6)。', },
+              { value: 1, name: 'getUTCMonth()', descr: '根据世界时从 Date 对象返回月份 (0 ~ 11)。', },
+              { value: 1, name: 'getUTCFullYear()', descr: '根据世界时从 Date 对象返回四位数的年份。', },
+              { value: 1, name: 'getUTCHours()', descr: '根据世界时返回 Date 对象的小时 (0 ~ 23)。', },
+              { value: 1, name: 'getUTCMinutes()', descr: '根据世界时返回 Date 对象的分钟 (0 ~ 59)。', },
+              { value: 1, name: 'getUTCSeconds()', descr: '根据世界时返回 Date 对象的秒钟 (0 ~ 59)。', },
+              { value: 1, name: 'getUTCMilliseconds()', descr: '根据世界时返回 Date 对象的毫秒(0 ~ 999)。', },
+              { value: 1, name: 'parse()', descr: '返回1970年1月1日午夜到指定日期（字符串）的毫秒数。', },
+              { value: 1, name: 'setDate()', descr: '设置 Date 对象中月的某一天 (1 ~ 31)。', },
+              { value: 1, name: 'setMonth()', descr: '设置 Date 对象中月份 (0 ~ 11)。', },
+              { value: 1, name: 'setFullYear()', descr: '设置 Date 对象中的年份（四位数字）。', },
+              { value: 1, name: 'setYear()', descr: '请使用 setFullYear() 方法代替。', },
+              { value: 1, name: 'setHours()', descr: '设置 Date 对象中的小时 (0 ~ 23)。', },
+              { value: 1, name: 'setMinutes()', descr: '设置 Date 对象中的分钟 (0 ~ 59)。', },
+              { value: 1, name: 'setSeconds()', descr: '设置 Date 对象中的秒钟 (0 ~ 59)。', },
+              { value: 1, name: 'setMilliseconds()', descr: '设置 Date 对象中的毫秒 (0 ~ 999)。', },
+              { value: 1, name: 'setTime()', descr: '以毫秒设置 Date 对象。', },
+              { value: 1, name: 'setUTCDate()', descr: '根据世界时设置 Date 对象中月份的一天 (1 ~ 31)。', },
+              { value: 1, name: 'setUTCMonth()', descr: '根据世界时设置 Date 对象中的月份 (0 ~ 11)。', },
+              { value: 1, name: 'setUTCFullYear()', descr: '根据世界时设置 Date 对象中的年份（四位数字）。', },
+              { value: 1, name: 'setUTCHours()', descr: '根据世界时设置 Date 对象中的小时 (0 ~ 23)。', },
+              { value: 1, name: 'setUTCMinutes()', descr: '根据世界时设置 Date 对象中的分钟 (0 ~ 59)。', },
+              { value: 1, name: 'setUTCSeconds()', descr: '根据世界时设置 Date 对象中的秒钟 (0 ~ 59)。', },
+              { value: 1, name: 'setUTCMilliseconds()', descr: '根据世界时设置 Date 对象中的毫秒 (0 ~ 999)。', },
+              { value: 1, name: 'toSource()', descr: '返回该对象的源代码。', },
+              { value: 1, name: 'toString()', descr: '把 Date 对象转换为字符串。', },
+              { value: 1, name: 'toTimeString()', descr: '把 Date 对象的时间部分转换为字符串。', },
+              { value: 1, name: 'toDateString()', descr: '把 Date 对象的日期部分转换为字符串。', },
+              { value: 1, name: 'toGMTString()', descr: '请使用 toUTCString() 方法代替。', },
+              { value: 1, name: 'toUTCString()', descr: '根据世界时，把 Date 对象转换为字符串。', },
+              { value: 1, name: 'toLocaleString()', descr: '根据本地时间格式，把 Date 对象转换为字符串。', },
+              { value: 1, name: 'toLocaleTimeString()', descr: '根据本地时间格式，把 Date 对象的时间部分转换为字符串。', },
+              { value: 1, name: 'toLocaleDateString()', descr: '根据本地时间格式，把 Date 对象的日期部分转换为字符串。', },
+              { value: 1, name: 'UTC()', descr: '根据世界时返回 1970 年 1 月 1 日 到指定日期的毫秒数。', },
+              { value: 1, name: 'valueOf()', descr: '返回 Date 对象的原始值。', },],
+          },
+          {
+            value: 1,
+            name: 'Math',
+            children: [
+              { value: 1, name: 'abs(x)', descr: '返回数的绝对值。', },
+              { value: 1, name: 'acos(x)', descr: '返回数的反余弦值。', },
+              { value: 1, name: 'asin(x)', descr: '返回数的反正弦值。', },
+              { value: 1, name: 'atan(x)', descr: '以介于 -PI/2 与 PI/2 弧度之间的数值来返回 x 的反正切值。', },
+              { value: 1, name: 'atan2(y,x)', descr: '返回从 x 轴到点 (x,y) 的角度（介于 -PI/2 与 PI/2 弧度之间）。', },
+              { value: 1, name: 'ceil(x)', descr: '对数进行上舍入。', },
+              { value: 1, name: 'cos(x)', descr: '返回数的余弦。', },
+              { value: 1, name: 'exp(x)', descr: '返回 e 的指数。', },
+              { value: 1, name: 'floor(x)', descr: '对数进行下舍入。', },
+              { value: 1, name: 'log(x)', descr: '返回数的自然对数（底为e）。', },
+              { value: 1, name: 'max(x,y)', descr: '返回 x 和 y 中的最高值。', },
+              { value: 1, name: 'min(x,y)', descr: '返回 x 和 y 中的最低值。', },
+              { value: 1, name: 'pow(x,y)', descr: '返回 x 的 y 次幂。', },
+              { value: 1, name: 'random()', descr: '返回 0 ~ 1 之间的随机数。', },
+              { value: 1, name: 'round(x)', descr: '把数四舍五入为最接近的整数。', },
+              { value: 1, name: 'sin(x)', descr: '返回数的正弦。', },
+              { value: 1, name: 'sqrt(x)', descr: '返回数的平方根。', },
+              { value: 1, name: 'tan(x)', descr: '返回角的正切。', },
+              { value: 1, name: 'toSource()', descr: '返回该对象的源代码。', },
+              { value: 1, name: 'valueOf()', descr: '返回 Math 对象的原始值。', },],
+          },
+          {
+            value: 1,
+            name: 'Number',
+            children: [],
+          },
+          {
+            value: 1,
+            name: 'String',
+            children: [
+              { value: 1, name: 'anchor()', descr: '创建 HTML 锚。', },
+              { value: 1, name: 'big()', descr: '用大号字体显示字符串。', },
+              { value: 1, name: 'blink()', descr: '显示闪动字符串。', },
+              { value: 1, name: 'bold()', descr: '使用粗体显示字符串。', },
+              { value: 1, name: 'charAt()', descr: '返回在指定位置的字符。', },
+              { value: 1, name: 'charCodeAt()', descr: '返回在指定的位置的字符的 Unicode 编码。', },
+              { value: 1, name: 'concat()', descr: '连接字符串。', },
+              { value: 1, name: 'fixed()', descr: '以打字机文本显示字符串。', },
+              { value: 1, name: 'fontcolor()', descr: '使用指定的颜色来显示字符串。', },
+              { value: 1, name: 'fontsize()', descr: '使用指定的尺寸来显示字符串。', },
+              { value: 1, name: 'fromCharCode()', descr: '从字符编码创建一个字符串。', },
+              { value: 1, name: 'indexOf()', descr: '检索字符串。', },
+              { value: 1, name: 'italics()', descr: '使用斜体显示字符串。', },
+              { value: 1, name: 'lastIndexOf()', descr: '从后向前搜索字符串。', },
+              { value: 1, name: 'link()', descr: '将字符串显示为链接。', },
+              { value: 1, name: 'localeCompare()', descr: '用本地特定的顺序来比较两个字符串。', },
+              { value: 1, name: 'match()', descr: '找到一个或多个正则表达式的匹配。', },
+              { value: 1, name: 'replace()', descr: '替换与正则表达式匹配的子串。', },
+              { value: 1, name: 'search()', descr: '检索与正则表达式相匹配的值。', },
+              { value: 1, name: 'slice()', descr: '提取字符串的片断，并在新的字符串中返回被提取的部分。', },
+              { value: 1, name: 'small()', descr: '使用小字号来显示字符串。', },
+              { value: 1, name: 'split()', descr: '把字符串分割为字符串数组。', },
+              { value: 1, name: 'strike()', descr: '使用删除线来显示字符串。', },
+              { value: 1, name: 'sub()', descr: '把字符串显示为下标。', },
+              { value: 1, name: 'substr()', descr: '从起始索引号提取字符串中指定数目的字符。', },
+              { value: 1, name: 'substring()', descr: '提取字符串中两个指定的索引号之间的字符。', },
+              { value: 1, name: 'sup()', descr: '把字符串显示为上标。', },
+              { value: 1, name: 'toLocaleLowerCase()', descr: '把字符串转换为小写。', },
+              { value: 1, name: 'toLocaleUpperCase()', descr: '把字符串转换为大写。', },
+              { value: 1, name: 'toLowerCase()', descr: '把字符串转换为小写。', },
+              { value: 1, name: 'toUpperCase()', descr: '把字符串转换为大写。', },
+              { value: 1, name: 'toSource()', descr: '代表对象的源代码。', },
+              { value: 1, name: 'toString()', descr: '返回字符串。', },
+              { value: 1, name: 'valueOf()', descr: '返回某个字符串对象的原始值。', },],
+          },
+          {
+            value: 1,
+            name: 'RegExp',
+            children: [],
+          },
+          {
+            value: 1,
+            name: 'Global',
+            children: [
+              { value: 1, name: 'decodeURI()', descr: '解码某个编码的 URI。', },
+              { value: 1, name: 'decodeURIComponent()', descr: '解码一个编码的 URI 组件。', },
+              { value: 1, name: 'encodeURI()', descr: '把字符串编码为 URI。', },
+              { value: 1, name: 'encodeURIComponent()', descr: '把字符串编码为 URI 组件。', },
+              { value: 1, name: 'escape()', descr: '对字符串进行编码。', },
+              { value: 1, name: 'eval()', descr: '计算 JavaScript 字符串，并把它作为脚本代码来执行。', },
+              { value: 1, name: 'getClass()', descr: '返回一个 JavaObject 的 JavaClass。', },
+              { value: 1, name: 'isFinite()', descr: '检查某个值是否为有穷大的数。', },
+              { value: 1, name: 'isNaN()', descr: '检查某个值是否是数字。', },
+              { value: 1, name: 'Number()', descr: '把对象的值转换为数字。', },
+              { value: 1, name: 'parseFloat()', descr: '解析一个字符串并返回一个浮点数。', },
+              { value: 1, name: 'parseInt()', descr: '解析一个字符串并返回一个整数。', },
+              { value: 1, name: 'String()', descr: '把对象的值转换为字符串。', },
+              { value: 1, name: 'unescape()', descr: '对由 escape() 编码的字符串进行解码。', }],
+          },
+          ],
+        },
+        {
+          value: 1,
+          name: 'Browser 对象',
+          descr: '',
+          children: [{ value: 1, name: 'Window', descr: '', children: [], },
+          { value: 1, name: 'Navigator', descr: '', children: [], },
+          { value: 1, name: 'Screen', descr: '', children: [], },
+          { value: 1, name: 'History', descr: '', children: [], },
+          { value: 1, name: 'Location', descr: '', children: [], },],
+        },
+        {
+          value: 1,
+          name: 'HTML DOM 对象',
+          descr: '',
+          children: [
+            { value: 1, name: 'Document', descr: '', children: [], },
+            { value: 1, name: 'Anchor', descr: '', children: [], },
+            { value: 1, name: 'Area', descr: '', children: [], },
+            { value: 1, name: 'Base', descr: '', children: [], },
+            { value: 1, name: 'Body', descr: '', children: [], },
+            { value: 1, name: 'Button', descr: '', children: [], },
+            { value: 1, name: 'Canvas', descr: '', children: [], },
+            { value: 1, name: 'Event', descr: '', children: [], },
+            { value: 1, name: 'Form', descr: '', children: [], },
+            { value: 1, name: 'Frame', descr: '', children: [], },
+            { value: 1, name: 'Frameset', descr: '', children: [], },
+            { value: 1, name: 'IFrame', descr: '', children: [], },
+            { value: 1, name: 'Image', descr: '', children: [], },
+            { value: 1, name: 'Input Button', descr: '', children: [], },
+            { value: 1, name: 'Input Checkbox', descr: '', children: [], },
+            { value: 1, name: 'Input File', descr: '', children: [], },
+            { value: 1, name: 'Input Hidden', descr: '', children: [], },
+            { value: 1, name: 'Input Password', descr: '', children: [], },
+            { value: 1, name: 'Input Radio', descr: '', children: [], },
+            { value: 1, name: 'Input Reset', descr: '', children: [], },
+            { value: 1, name: 'Input Submit', descr: '', children: [], },
+            { value: 1, name: 'Input Text', descr: '', children: [], },
+            { value: 1, name: 'Link', descr: '', children: [], },
+            { value: 1, name: 'Meta', descr: '', children: [], },
+            { value: 1, name: 'Object', descr: '', children: [], },
+            { value: 1, name: 'Option', descr: '', children: [], },
+            { value: 1, name: 'Select', descr: '', children: [], },
+            { value: 1, name: 'Style', descr: '', children: [], },
+            { value: 1, name: 'Table', descr: '', children: [], },
+            { value: 1, name: 'TableCell', descr: '', children: [], },
+            { value: 1, name: 'TableRow', descr: '', children: [], },
+            { value: 1, name: 'Textarea', descr: '', children: [], },],
+        },
+        ],
+      },
+      {
+        value: 1,
+        name: 'PHP',
+        descr: 'PHP',
+      },
+      {
+        value: 1,
+        name: 'ASP.NET Core',
+        descr: 'ASP.NET Core',
+      },
+      {
+        value: 1,
+        name: 'Node.js',
+        descr: 'Node.js',
+      },
+      ],
+    },
+    {
+      value: 0,
+      name: 'Psychology',
+    },
+    {
+      value: 0,
+      name: 'Biology',
+    },
+    ];
+
+  </script>
+</head>
+
+<body>
+  <div id="chart" style="width: 100vw; height: 100vh"></div>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.0.0/dist/echarts.min.js"
+    integrity="sha256-l2MbFZa/DPaDeHSfMIRbcg5x1GwNX1LaeTEl93+r6VU=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('chart'));
+
+    function colorMappingChange(value = 1) {
+      var levelOption = getLevelOption(value);
+      chart.setOption({
+        legend: {
+          left: '20'
+        },
+        series: [{
+          levels: levelOption,
+        },],
+      });
+    }
+
+    var formatUtil = echarts.format;
+
+    function getLevelOption() {
+      return [{
+        itemStyle: {
+          borderColor: '#777',
+          borderWidth: 0,
+          gapWidth: 1,
+        },
+        upperLabel: {
+          show: false,
+        },
+      },
+      {
+        itemStyle: {
+          borderColor: '#555',
+          borderWidth: 5,
+          gapWidth: 1,
+        },
+        emphasis: {
+          itemStyle: {
+            borderColor: '#ddd',
+          },
+        },
+      },
+      {
+        colorSaturation: [0.35, 0.5],
+        itemStyle: {
+          borderWidth: 5,
+          gapWidth: 1,
+          borderColorSaturation: 0.6,
+        },
+      },
+      ];
+    }
+
+    myChart.setOption(
+      (option = {
+        tooltip: {
+          formatter: function (info) {
+            var descr = info.data.descr;
+            var treePathInfo = info.treePathInfo;
+            var treePath = [];
+
+            for (var i = 1; i < treePathInfo.length; i++) {
+              treePath.push(treePathInfo[i].name);
+            }
+
+            return [
+              '<div class="tooltip-title">' +
+              formatUtil.encodeHTML(treePath.join('/')) +
+              '</div>',
+              '' + formatUtil.addCommas(descr) + ' ',
+            ].join('');
+          },
+        },
+
+        series: [{
+          name: 'Knowledge',
+          type: 'treemap',
+          visibleMin: 300,
+          label: {
+            show: true,
+            formatter: '{b}',
+          },
+          upperLabel: {
+            show: true,
+            height: 30,
+          },
+          itemStyle: {
+            borderColor: '#fff',
+          },
+          levels: getLevelOption(),
+          data: know,
+        },],
+      })
+    );
+
+  </script>
+</body>
+
+</html>
