@@ -1,26 +1,18 @@
-# node
+<!-- ### Hi there 👋 -->
 
-## Branches
+<!--
+**langnang/langnang** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-```sh
+Here are some ideas to get you started:
 
-┌───────────────────────┐       ┌─────────────────────────────┐       ┌───────────┐       ┌──────────┐
-|                       |       |                             |       |           |       |          |
-|  @langnang-temp/node  | ====> |   @langnang-temp/vuepress   | ====> |  develop  | ====> |  master  |
-|   Sync from template  |       |        Sync to remote       |       |           |       |          |
-└───────────────────────┘       └─────────────────────────────┘       └───────────┘       └──────────┘
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
 
-```
-
-### Sync to remote
-
-```sh
-# add remote url
-git remote set-url --add origin [url]
-# checkout the branch for sync
-git checkout [branch]
-
-git pull
-# force push
-git push -f
-```
+![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=langnang&count_private=true&theme=highcontrast&show_icons=true)
