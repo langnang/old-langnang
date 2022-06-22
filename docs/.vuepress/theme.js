@@ -28,9 +28,9 @@ module.exports = {
       { text: 'GitHub', link: 'https://github.com/langnang-temp/vuepress' },
       {
         text: 'Langnang', items: [
-          { text: 'Langnang', link: 'https://github.com/langnang/langnang' },
-          { text: 'Templates', link: 'https://github.com/langnang-temp/langnang-temp' },
-          { text: 'Packages', link: 'https://github.com/langnang-package/langnang-package' },
+          { text: 'Langnang', link: 'https://langnang.github.io/langnang' },
+          { text: 'Templates', link: 'https://langnang-temp.github.io/langnang-temp' },
+          { text: 'Packages', link: 'https://langnang-package.github.io/langnang-package' },
         ]
       },
       {
