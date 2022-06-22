@@ -89,8 +89,5 @@ module.exports = [
   ['flowchart',],
   [
     require('./github-file'),
-    {
-      // isDebugger: true,
-    },
   ],
 ]
