@@ -48,6 +48,13 @@ module.exports = {
       },
       { text: 'GitHub', link: 'https://github.com/langnang/langnang' },
       {
+        text: 'Langnang', items: [
+          { text: 'Langnang', link: 'https://langnang.github.io/langnang' },
+          { text: 'Templates', link: 'https://langnang-temp.github.io/langnang-temp' },
+          { text: 'Packages', link: 'https://langnang-package.github.io/langnang-package' },
+        ]
+      },
+      {
         text: 'Vue', items: [
           { text: 'Vue', link: 'https://cn.vuejs.org/zh/' },
           { text: 'Vue Router', link: 'https://router.vuejs.org/zh/' },
