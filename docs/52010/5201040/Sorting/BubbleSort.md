@@ -16,14 +16,13 @@
 3. 针对所有的元素重复以上的步骤，除了最后一个。
 4. 持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。
 
-```mermaid
-st=>start: Start:>http://www.google.com[blank]
-e=>end:>http://www.google.com
-op1=>operation: My Operation
+@flowstart
+st=>start: Start
+e=>end: End
+op1=>operation: for (const i = 0; i < array.length - 1; i++)
 sub1=>subroutine: My Subroutine
-cond=>condition: Yes
-or No?:>http://www.google.com
-io=>inputoutput: catch something...
+cond=>condition: array[i] > array[i + 1]
+io=>inputoutput: [array[i], array[i + 1]] = [array[i + 1], array[i]]
 para=>parallel: parallel tasks
 
 st->op1->cond
@@ -31,7 +30,8 @@ cond(yes)->io->e
 cond(no)->para
 para(path1, bottom)->sub1(right)->op1
 para(path2, top)->op1
-```
+
+@flowend
 
 ## 实例演示
 
@@ -125,6 +125,28 @@ array:  [1] [0] [2] [3] [4] [5] [6] [7] [8] [9]
 <<< @/scripts/php/algorithm/bubbleSort.php
 </code-block>
 </code-group> -->
+
+<CodeSwitcher :languages="{js:'JavaScript',ts:'TypeScript'}">
+
+  <template v-slot:js>
+
+```js
+module.exports = function (str) {
+  return typeof str === "string" && str.trim() === str;
+};
+```
+
+  </template>
+  <template v-slot:ts>
+
+```ts
+export default function isString(str: string): str is string {
+  return typeof str === "string" && str.trim() === str;
+}
+```
+
+  </template>
+</CodeSwitcher>
 
 ## 参考
 
