@@ -105,7 +105,10 @@ sidebar: auto
 - [Visual Studio](https://visualstudio.microsoft.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - JetBrains
+  - [IntelliJ IDEA](https://www.jetbrains.com/idea/): A Capable and Ergonomic Java IDE for Enterprise Java, Scala, Kotlin and much more...
+    - Download: [Window](https://download.jetbrains.com.cn/idea/ideaIU-2022.1.3.exe) | [macOS]() | [Linux](https://download.jetbrains.com.cn/idea/ideaIU-2022.1.3.tar.gz)
   - [WebStorm](https://www.jetbrains.com/webstorm/): The smartest JavaScript IDE
+    - Download: [All](https://download.jetbrains.com.cn/webstorm/WebStorm-2022.1.3.exe)
   - [PhpStorm](https://www.jetbrains.com/phpstorm/): The Lightning-Smart PHP IDE
   - [PyCharm](https://www.jetbrains.com/pycharm/): The Python IDE for Professional Developers
 - [CodePen](https://codepen.io/): Online Code Editor and Front End Web Developer Community
