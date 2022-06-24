@@ -40,10 +40,21 @@ module.exports = {
               { text: '操作系统与操作环境', link: '/52040/5204020/', },
               { text: '程序设计及其语言', link: '/52040/5204030/', },
               { text: '数据库', link: '/52040/5204050/', },
-              { text: '软件开发环境与开发技术', link: '/52040/5204060/', },
+              { text: '软件开发环境与开发技术', link: '/52040/5204060/' },
               { text: '软件工程', link: '/52040/5204070/', },
             ],
           },
+        ]
+      },
+      {
+        text: "编程技术", link: '/52040/5204060/', items: [
+          { text: 'HTML', link: '/52040/5204060/HTML', },
+          { text: 'CSS', link: '/52040/5204060/CSS', },
+          { text: 'JavaScript', link: '/52040/5204060/JavaScript' },
+          { text: 'NodeJs', link: '/52040/5204060/NodeJs' },
+          { text: 'PHP', link: '/52040/5204060/PHP', },
+          { text: 'ASP.NET Core', link: '/52040/5204060/AspNetCore', },
+          { text: 'Python', link: '/52040/5204060/Python', },
         ]
       },
       { text: 'GitHub', link: 'https://github.com/langnang/langnang' },
