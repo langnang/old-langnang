@@ -87,6 +87,10 @@ module.exports = [
    * vuepress-plugin-flowchart
    */
   ['flowchart',],
+  /**
+   * VuePress Plugin for mermaid.js
+   */
+  ['vuepress-plugin-mermaidjs'],
   [
     require('./github-file'),
   ],
