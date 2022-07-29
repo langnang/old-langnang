@@ -10,5 +10,5 @@ export default ({
   siteData // site metadata
 }) => {
   // ...apply enhancements to the app
-  console.log(Vue, options, router, siteData);
+  // console.log(Vue, options, router, siteData);
 }
