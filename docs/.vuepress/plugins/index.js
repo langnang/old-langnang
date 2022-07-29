@@ -87,7 +87,5 @@ module.exports = [
    * vuepress-plugin-flowchart
    */
   ['flowchart',],
-  [
-    require('./github-file'),
-  ],
+  // [require('./github-file'),],
 ]

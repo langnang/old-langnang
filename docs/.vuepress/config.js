@@ -35,7 +35,7 @@ module.exports = {
    * @type Number
    * @default 8080
    */
-  port: 8080,
+  port: 8083,
   /**
    * 插件通常会为 VuePress 添加全局功能。插件的范围没有限制。
    * 你可以在 Awesome VuePress (opens new window)中找到更多的插件。

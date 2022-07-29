@@ -23,7 +23,7 @@ module.exports = {
      */
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/Guide' },
+      { text: '面试题', link: '/Interview/' },
       { text: '软件工具&服务', link: '/toolkit/', },
       {
         text: '计算机科学技术', items: [
@@ -40,21 +40,10 @@ module.exports = {
               { text: '操作系统与操作环境', link: '/52040/5204020/', },
               { text: '程序设计及其语言', link: '/52040/5204030/', },
               { text: '数据库', link: '/52040/5204050/', },
-              { text: '软件开发环境与开发技术', link: '/52040/5204060/' },
+              { text: '软件开发环境与开发技术', link: '/52040/5204060/HTML/' },
               { text: '软件工程', link: '/52040/5204070/', },
             ],
           },
-        ]
-      },
-      {
-        text: "编程技术", link: '/52040/5204060/', items: [
-          { text: 'HTML', link: '/52040/5204060/HTML', },
-          { text: 'CSS', link: '/52040/5204060/CSS', },
-          { text: 'JavaScript', link: '/52040/5204060/JavaScript' },
-          { text: 'NodeJs', link: '/52040/5204060/NodeJs' },
-          { text: 'PHP', link: '/52040/5204060/PHP', },
-          { text: 'ASP.NET Core', link: '/52040/5204060/AspNetCore', },
-          { text: 'Python', link: '/52040/5204060/Python', },
         ]
       },
       { text: 'GitHub', link: 'https://github.com/langnang/langnang' },
@@ -65,16 +54,6 @@ module.exports = {
           { text: 'Packages', link: 'https://langnang-package.github.io/langnang-package' },
         ]
       },
-      {
-        text: 'Vue', items: [
-          { text: 'Vue', link: 'https://cn.vuejs.org/zh/' },
-          { text: 'Vue Router', link: 'https://router.vuejs.org/zh/' },
-          { text: 'Vuex', link: 'https://vuex.vuejs.org/zh/' },
-          { text: 'VuePress', link: 'https://vuepress.vuejs.org/zh/' },
-          { text: 'Awesome VuePress', link: 'https://github.com/vuepress/awesome-vuepress' },
-          { text: 'Vuepress Community', link: 'https://vuepress-community.netlify.app/zh/' },
-        ]
-      }
     ],
     /**
      * 侧边栏
