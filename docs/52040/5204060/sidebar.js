@@ -8,6 +8,7 @@ module.exports = {
     '5204060/NodeJs/',
     '5204060/React/',
     require('./Vue/sidebar'),
+    '5204060/TypeScript/',
     '5204060/WeChat/',
     {
       title: "NPM Packages",
