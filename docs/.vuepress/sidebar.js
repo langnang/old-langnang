@@ -50,7 +50,20 @@ module.exports = {
             }
           ]
         },
-        '5204060/JavaScript/',
+        {
+          title: "JavaScript",
+          path: '/52040/5204060/JavaScript/',
+          children: [
+            {
+              title: '面试题',
+              children: readdirSync('52040/5204060/JavaScript/Interview', '5204060/JavaScript/Interview')
+            },
+            {
+              title: '名词解释',
+              children: readdirSync('52040/5204060/JavaScript/Noun', '5204060/JavaScript/Noun')
+            },
+          ]
+        },
         {
           title: "ES2015/ES6",
           path: '/52040/5204060/ECMAScript/ES6/',
