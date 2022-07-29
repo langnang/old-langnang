@@ -68,7 +68,7 @@ module.exports = [
   /**
    *  appends a copy button to every instance of a given selector (defaults to div[class*="language-"] pre)
    */
-  ['vuepress-plugin-code-copy',],
+  // ['vuepress-plugin-code-copy',],
   /**
    * Merge Markdown files in a single Markdown
    */
