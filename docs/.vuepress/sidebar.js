@@ -6,7 +6,7 @@ const path = require('path');
  * @param {*} routepath 
  * @returns 
  */
-const readdirSync = (dirpath, routepath) => fs.readdirSync(`./docs/${dirpath}`, (err, data) => err ? [] : data).map(v => `${routepath}/${v}`)
+const readdirSync = (dirpath, routepath) => fs.readdirSync(`./docs/${dirpath}`, (err, data) => err ? [] : data).filter(v => v != 'README.md').map(v => `${routepath}/${v}`)
 module.exports = {
   ...require('./../52010/sidebar.js'),
   // ...require('./../52040/sidebar.js'),
@@ -36,6 +36,10 @@ module.exports = {
           path: '/52040/5204060/CSS/',
           children: [
             {
+              title: '面试题',
+              children: readdirSync('52040/5204060/CSS/Interview', '5204060/CSS/Interview')
+            },
+            {
               title: '参考手册',
               children: [
                 {
@@ -51,6 +55,10 @@ module.exports = {
           title: "ES2015/ES6",
           path: '/52040/5204060/ECMAScript/ES6/',
           children: [
+            {
+              title: '面试题',
+              children: readdirSync('52040/5204060/ECMAScript/ES6/Interview', '5204060/ECMAScript/ES6/Interview')
+            },
             {
               title: '参考手册',
               children: [
@@ -91,9 +99,7 @@ module.exports = {
               children: [
                 {
                   title: 'Manual',
-                  children: [
-                    '5204060/Vue/Reference/Manual/API'
-                  ]
+                  children: readdirSync('52040/5204060/Vue/Reference/Manual', '5204060/Vue/Reference/Manual')
                 }
               ],
             }

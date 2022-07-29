@@ -5,7 +5,7 @@ source: https://www.w3school.com.cn/cssref/css_default_values.asp
 author: w3school.com.cn
 ---
 
-# CSS 默认值参考手册
+# CSS 默认值
 
 > ## Excerpt
 > 下表显示了所有 HTML 元素的默认 CSS 浏览器值。

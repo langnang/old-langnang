@@ -5,7 +5,7 @@ source: https://www.w3school.com.cn/cssref/css_selectors.asp
 author: w3school.com.cn
 ---
 
-# CSS 选择器参考手册
+# CSS 选择器
 
 > ` ## Excerpt
 
