@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{479:function(t,e,n){"use strict";n.r(e);var i={name:"ViewToolkit",data:function(){return{list:[],category:[],tag:[]}}},o=n(18),a=Object(o.a)(i,(function(){var t=this.$createElement;return(this._self._c||t)("div",[this._v("ViewToolkit")])}),[],!1,null,"21245fc1",null);e.default=a.exports}}]);

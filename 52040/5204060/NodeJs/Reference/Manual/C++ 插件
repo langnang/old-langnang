@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>C++ 插件 | Node.js API 文档 | Hello Langnang</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Welcome to langnang">
+    
+    <link rel="preload" href="/langnang/assets/css/0.styles.8911c2d2.css" as="style"><link rel="preload" href="/langnang/assets/js/app.d31b4f67.js" as="script"><link rel="preload" href="/langnang/assets/js/3.4862c1a5.js" as="script"><link rel="preload" href="/langnang/assets/js/120.3c6dfea3.js" as="script"><link rel="prefetch" href="/langnang/assets/js/10.775593e7.js"><link rel="prefetch" href="/langnang/assets/js/100.3b42a1b3.js"><link rel="prefetch" href="/langnang/assets/js/101.f90544bb.js"><link rel="prefetch" href="/langnang/assets/js/102.5948090a.js"><link rel="prefetch" href="/langnang/assets/js/103.646bae3d.js"><link rel="prefetch" href="/langnang/assets/js/104.388c68f6.js"><link rel="prefetch" href="/langnang/assets/js/105.3dc547ce.js"><link rel="prefetch" href="/langnang/assets/js/106.711f4951.js"><link rel="prefetch" href="/langnang/assets/js/107.8c7375e5.js"><link rel="prefetch" href="/langnang/assets/js/108.06de7dc8.js"><link rel="prefetch" href="/langnang/assets/js/109.5b31d5ad.js"><link rel="prefetch" href="/langnang/assets/js/11.0a5dae33.js"><link rel="prefetch" href="/langnang/assets/js/110.009ec9bb.js"><link rel="prefetch" href="/langnang/assets/js/111.bac229c8.js"><link rel="prefetch" href="/langnang/assets/js/112.c418e9e1.js"><link rel="prefetch" href="/langnang/assets/js/113.24a8ee24.js"><link rel="prefetch" href="/langnang/assets/js/114.8fe6afae.js"><link rel="prefetch" href="/langnang/assets/js/115.d2df2dc5.js"><link rel="prefetch" href="/langnang/assets/js/116.b5ccbd12.js"><link rel="prefetch" href="/langnang/assets/js/117.d172ce1f.js"><link rel="prefetch" href="/langnang/assets/js/118.6db473b1.js"><link rel="prefetch" href="/langnang/assets/js/119.19ec0599.js"><link rel="prefetch" href="/langnang/assets/js/12.0af39c0b.js"><link rel="prefetch" href="/langnang/assets/js/121.72a9adf6.js"><link rel="prefetch" href="/langnang/assets/js/122.75b8b13f.js"><link rel="prefetch" href="/langnang/assets/js/123.f5011de7.js"><link rel="prefetch" href="/langnang/assets/js/124.7a73b968.js"><link rel="prefetch" href="/langnang/assets/js/125.2fd0f7a8.js"><link rel="prefetch" href="/langnang/assets/js/126.56416ba6.js"><link rel="prefetch" href="/langnang/assets/js/127.ccd25ff4.js"><link rel="prefetch" href="/langnang/assets/js/128.8edc62a9.js"><link rel="prefetch" href="/langnang/assets/js/129.216fd032.js"><link rel="prefetch" href="/langnang/assets/js/13.c03d4d79.js"><link rel="prefetch" href="/langnang/assets/js/130.c57710d0.js"><link rel="prefetch" href="/langnang/assets/js/131.35330210.js"><link rel="prefetch" href="/langnang/assets/js/132.ec0bf031.js"><link rel="prefetch" href="/langnang/assets/js/133.c6a81315.js"><link rel="prefetch" href="/langnang/assets/js/134.9e3141d7.js"><link rel="prefetch" href="/langnang/assets/js/135.111242f1.js"><link rel="prefetch" href="/langnang/assets/js/136.ef67c601.js"><link rel="prefetch" href="/langnang/assets/js/137.bb3e40a9.js"><link rel="prefetch" href="/langnang/assets/js/138.80a1b191.js"><link rel="prefetch" href="/langnang/assets/js/139.608bdbfe.js"><link rel="prefetch" href="/langnang/assets/js/14.050f82cf.js"><link rel="prefetch" href="/langnang/assets/js/140.e736bed7.js"><link rel="prefetch" href="/langnang/assets/js/141.8bb3e423.js"><link rel="prefetch" href="/langnang/assets/js/142.599583d1.js"><link rel="prefetch" href="/langnang/assets/js/143.1b03e7c9.js"><link rel="prefetch" href="/langnang/assets/js/144.d59da5cd.js"><link rel="prefetch" href="/langnang/assets/js/145.69f830c2.js"><link rel="prefetch" href="/langnang/assets/js/146.f1d0d249.js"><link rel="prefetch" href="/langnang/assets/js/147.6ffe2b0a.js"><link rel="prefetch" href="/langnang/assets/js/148.a23cb0f6.js"><link rel="prefetch" href="/langnang/assets/js/149.fc2d720e.js"><link rel="prefetch" href="/langnang/assets/js/15.52373675.js"><link rel="prefetch" href="/langnang/assets/js/150.fde1fdfc.js"><link rel="prefetch" href="/langnang/assets/js/151.ad337b6b.js"><link rel="prefetch" href="/langnang/assets/js/152.c27a6a8b.js"><link rel="prefetch" href="/langnang/assets/js/153.d1df63e4.js"><link rel="prefetch" href="/langnang/assets/js/154.37e8d179.js"><link rel="prefetch" href="/langnang/assets/js/155.20a7bd1e.js"><link rel="prefetch" href="/langnang/assets/js/156.3eb0c337.js"><link rel="prefetch" href="/langnang/assets/js/157.b439abfe.js"><link rel="prefetch" href="/langnang/assets/js/158.e27914da.js"><link rel="prefetch" href="/langnang/assets/js/159.e2c81e4d.js"><link rel="prefetch" href="/langnang/assets/js/16.d39a414a.js"><link rel="prefetch" href="/langnang/assets/js/160.be13652a.js"><link rel="prefetch" href="/langnang/assets/js/161.bb2944ac.js"><link rel="prefetch" href="/langnang/assets/js/162.03f5841b.js"><link rel="prefetch" href="/langnang/assets/js/163.ab0cc579.js"><link rel="prefetch" href="/langnang/assets/js/164.d1c5018d.js"><link rel="prefetch" href="/langnang/assets/js/165.6041bd7d.js"><link rel="prefetch" href="/langnang/assets/js/166.4007cfdb.js"><link rel="prefetch" href="/langnang/assets/js/167.60edd5dc.js"><link rel="prefetch" href="/langnang/assets/js/168.6c3f208e.js"><link rel="prefetch" href="/langnang/assets/js/169.c0440ecf.js"><link rel="prefetch" href="/langnang/assets/js/17.742bbdba.js"><link rel="prefetch" href="/langnang/assets/js/170.a3a5c6fc.js"><link rel="prefetch" href="/langnang/assets/js/171.9da19196.js"><link rel="prefetch" href="/langnang/assets/js/172.81335ae9.js"><link rel="prefetch" href="/langnang/assets/js/173.eff4c653.js"><link rel="prefetch" href="/langnang/assets/js/174.067a131c.js"><link rel="prefetch" href="/langnang/assets/js/175.d9f2d29c.js"><link rel="prefetch" href="/langnang/assets/js/176.9160d186.js"><link rel="prefetch" href="/langnang/assets/js/177.961ca383.js"><link rel="prefetch" href="/langnang/assets/js/178.f6a50663.js"><link rel="prefetch" href="/langnang/assets/js/179.32053b51.js"><link rel="prefetch" href="/langnang/assets/js/18.c296e2e1.js"><link rel="prefetch" href="/langnang/assets/js/180.78baa277.js"><link rel="prefetch" href="/langnang/assets/js/181.fd6da4b7.js"><link rel="prefetch" href="/langnang/assets/js/182.409f2a7a.js"><link rel="prefetch" href="/langnang/assets/js/183.5a920d84.js"><link rel="prefetch" href="/langnang/assets/js/184.105cf2a5.js"><link rel="prefetch" href="/langnang/assets/js/185.a58308b2.js"><link rel="prefetch" href="/langnang/assets/js/186.0e5bd82d.js"><link rel="prefetch" href="/langnang/assets/js/187.4fa04382.js"><link rel="prefetch" href="/langnang/assets/js/188.97d376e0.js"><link rel="prefetch" href="/langnang/assets/js/189.80b00f18.js"><link rel="prefetch" href="/langnang/assets/js/19.1c5a6ebf.js"><link rel="prefetch" href="/langnang/assets/js/190.69690b18.js"><link rel="prefetch" href="/langnang/assets/js/191.0e3e1b72.js"><link rel="prefetch" href="/langnang/assets/js/192.9bd72dc2.js"><link rel="prefetch" href="/langnang/assets/js/193.56adf4dc.js"><link rel="prefetch" href="/langnang/assets/js/194.93bc1c26.js"><link rel="prefetch" href="/langnang/assets/js/195.b22b4646.js"><link rel="prefetch" href="/langnang/assets/js/196.7ab4c9c4.js"><link rel="prefetch" href="/langnang/assets/js/20.cb8b7c79.js"><link rel="prefetch" href="/langnang/assets/js/21.fa864efa.js"><link rel="prefetch" href="/langnang/assets/js/22.f9b2bb9e.js"><link rel="prefetch" href="/langnang/assets/js/23.f1d633b3.js"><link rel="prefetch" href="/langnang/assets/js/24.d48086ba.js"><link rel="prefetch" href="/langnang/assets/js/25.fae94c8a.js"><link rel="prefetch" href="/langnang/assets/js/26.0a794c38.js"><link rel="prefetch" href="/langnang/assets/js/27.3ab27b41.js"><link rel="prefetch" href="/langnang/assets/js/28.04cb9534.js"><link rel="prefetch" href="/langnang/assets/js/29.e736eb74.js"><link rel="prefetch" href="/langnang/assets/js/30.21343d23.js"><link rel="prefetch" href="/langnang/assets/js/31.46d8bc29.js"><link rel="prefetch" href="/langnang/assets/js/32.adbfd3d7.js"><link rel="prefetch" href="/langnang/assets/js/33.a652cb4a.js"><link rel="prefetch" href="/langnang/assets/js/34.a7cbf3be.js"><link rel="prefetch" href="/langnang/assets/js/35.682fcd4d.js"><link rel="prefetch" href="/langnang/assets/js/36.cf77b46c.js"><link rel="prefetch" href="/langnang/assets/js/37.72bb2cea.js"><link rel="prefetch" href="/langnang/assets/js/38.1f71af35.js"><link rel="prefetch" href="/langnang/assets/js/39.44ae3ca7.js"><link rel="prefetch" href="/langnang/assets/js/4.0015768f.js"><link rel="prefetch" href="/langnang/assets/js/40.d5c32fc6.js"><link rel="prefetch" href="/langnang/assets/js/41.b76618fa.js"><link rel="prefetch" href="/langnang/assets/js/42.f86242dc.js"><link rel="prefetch" href="/langnang/assets/js/43.762e6005.js"><link rel="prefetch" href="/langnang/assets/js/44.1d3f1771.js"><link rel="prefetch" href="/langnang/assets/js/45.0489851f.js"><link rel="prefetch" href="/langnang/assets/js/46.111d0911.js"><link rel="prefetch" href="/langnang/assets/js/47.089ce059.js"><link rel="prefetch" href="/langnang/assets/js/48.797a6840.js"><link rel="prefetch" href="/langnang/assets/js/49.bcf6b30e.js"><link rel="prefetch" href="/langnang/assets/js/5.a912fbe1.js"><link rel="prefetch" href="/langnang/assets/js/50.ec9ff8bb.js"><link rel="prefetch" href="/langnang/assets/js/51.da32bd2c.js"><link rel="prefetch" href="/langnang/assets/js/52.9ac7037d.js"><link rel="prefetch" href="/langnang/assets/js/53.913a149f.js"><link rel="prefetch" href="/langnang/assets/js/54.a39f0290.js"><link rel="prefetch" href="/langnang/assets/js/55.ce2fd45a.js"><link rel="prefetch" href="/langnang/assets/js/56.f95f2056.js"><link rel="prefetch" href="/langnang/assets/js/57.9641f8db.js"><link rel="prefetch" href="/langnang/assets/js/58.9e0bd9f9.js"><link rel="prefetch" href="/langnang/assets/js/59.ff799c4d.js"><link rel="prefetch" href="/langnang/assets/js/6.a83dfbde.js"><link rel="prefetch" href="/langnang/assets/js/60.e148b970.js"><link rel="prefetch" href="/langnang/assets/js/61.297c39ea.js"><link rel="prefetch" href="/langnang/assets/js/62.3f65914a.js"><link rel="prefetch" href="/langnang/assets/js/63.820344bb.js"><link rel="prefetch" href="/langnang/assets/js/64.e6d80ada.js"><link rel="prefetch" href="/langnang/assets/js/65.6645abf1.js"><link rel="prefetch" href="/langnang/assets/js/66.83b70802.js"><link rel="prefetch" href="/langnang/assets/js/67.c7861816.js"><link rel="prefetch" href="/langnang/assets/js/68.7bd18b26.js"><link rel="prefetch" href="/langnang/assets/js/69.51bc914a.js"><link rel="prefetch" href="/langnang/assets/js/7.c49c916e.js"><link rel="prefetch" href="/langnang/assets/js/70.adb07203.js"><link rel="prefetch" href="/langnang/assets/js/71.166ddd79.js"><link rel="prefetch" href="/langnang/assets/js/72.f3f769b7.js"><link rel="prefetch" href="/langnang/assets/js/73.a2cebf9d.js"><link rel="prefetch" href="/langnang/assets/js/74.31312659.js"><link rel="prefetch" href="/langnang/assets/js/75.c8eaec5f.js"><link rel="prefetch" href="/langnang/assets/js/76.9dcdecdd.js"><link rel="prefetch" href="/langnang/assets/js/77.7c23270e.js"><link rel="prefetch" href="/langnang/assets/js/78.f3e0ecf5.js"><link rel="prefetch" href="/langnang/assets/js/79.2179f40d.js"><link rel="prefetch" href="/langnang/assets/js/8.63d120fa.js"><link rel="prefetch" href="/langnang/assets/js/80.89a31bb9.js"><link rel="prefetch" href="/langnang/assets/js/81.f95bb1af.js"><link rel="prefetch" href="/langnang/assets/js/82.cab0e3cc.js"><link rel="prefetch" href="/langnang/assets/js/83.c8ba333b.js"><link rel="prefetch" href="/langnang/assets/js/84.46b333b4.js"><link rel="prefetch" href="/langnang/assets/js/85.e8942270.js"><link rel="prefetch" href="/langnang/assets/js/86.f4fba564.js"><link rel="prefetch" href="/langnang/assets/js/87.7f45a780.js"><link rel="prefetch" href="/langnang/assets/js/88.9fc00189.js"><link rel="prefetch" href="/langnang/assets/js/89.e4e6e356.js"><link rel="prefetch" href="/langnang/assets/js/9.17377351.js"><link rel="prefetch" href="/langnang/assets/js/90.2a30069d.js"><link rel="prefetch" href="/langnang/assets/js/91.d1fffc51.js"><link rel="prefetch" href="/langnang/assets/js/92.6d054837.js"><link rel="prefetch" href="/langnang/assets/js/93.6a2aeb2d.js"><link rel="prefetch" href="/langnang/assets/js/94.dfcb77e8.js"><link rel="prefetch" href="/langnang/assets/js/95.4e7702b3.js"><link rel="prefetch" href="/langnang/assets/js/96.5174433b.js"><link rel="prefetch" href="/langnang/assets/js/97.1afd331d.js"><link rel="prefetch" href="/langnang/assets/js/98.2888b244.js"><link rel="prefetch" href="/langnang/assets/js/99.1b857e0e.js"><link rel="prefetch" href="/langnang/assets/js/vendors~flowchart.d11844ea.js">
+    <link rel="stylesheet" href="/langnang/assets/css/0.styles.8911c2d2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/langnang/" class="home-link router-link-active"><!----> <span class="site-name">Hello Langnang</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/langnang/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/langnang/Interview/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/langnang/toolkit/" class="nav-link">
+  软件工具&amp;服务
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机科学技术" class="dropdown-title"><span class="title">计算机科学技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机科学技术" class="mobile-dropdown-title"><span class="title">计算机科学技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          计算机科学技术基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/langnang/52010/5201040/" class="nav-link">
+  算法理论
+</a></li><li class="dropdown-subitem"><a href="/langnang/52010/5201050/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-subitem"><a href="/langnang/52010/5201060/" class="nav-link">
+  数据安全与计算机安全
+</a></li></ul></li><li class="dropdown-item"><h4>
+          计算机软件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/langnang/52040/5204010/" class="nav-link">
+  软件理论
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204020/" class="nav-link">
+  操作系统与操作环境
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204030/" class="nav-link">
+  程序设计及其语言
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204050/" class="nav-link">
+  数据库
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204060/HTML/" class="nav-link">
+  软件开发环境与开发技术
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204070/" class="nav-link">
+  软件工程
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/langnang/langnang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Langnang" class="dropdown-title"><span class="title">Langnang</span> <span class="arrow down"></span></button> <button type="button" aria-label="Langnang" class="mobile-dropdown-title"><span class="title">Langnang</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://langnang.github.io/langnang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Langnang
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://langnang-temp.github.io/langnang-temp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Templates
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://langnang-package.github.io/langnang-package" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Packages
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/langnang/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/langnang/Interview/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/langnang/toolkit/" class="nav-link">
+  软件工具&amp;服务
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机科学技术" class="dropdown-title"><span class="title">计算机科学技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机科学技术" class="mobile-dropdown-title"><span class="title">计算机科学技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          计算机科学技术基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/langnang/52010/5201040/" class="nav-link">
+  算法理论
+</a></li><li class="dropdown-subitem"><a href="/langnang/52010/5201050/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-subitem"><a href="/langnang/52010/5201060/" class="nav-link">
+  数据安全与计算机安全
+</a></li></ul></li><li class="dropdown-item"><h4>
+          计算机软件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/langnang/52040/5204010/" class="nav-link">
+  软件理论
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204020/" class="nav-link">
+  操作系统与操作环境
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204030/" class="nav-link">
+  程序设计及其语言
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204050/" class="nav-link">
+  数据库
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204060/HTML/" class="nav-link">
+  软件开发环境与开发技术
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204070/" class="nav-link">
+  软件工程
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/langnang/langnang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Langnang" class="dropdown-title"><span class="title">Langnang</span> <span class="arrow down"></span></button> <button type="button" aria-label="Langnang" class="mobile-dropdown-title"><span class="title">Langnang</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://langnang.github.io/langnang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Langnang
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://langnang-temp.github.io/langnang-temp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Templates
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://langnang-package.github.io/langnang-package" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Packages
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/langnang/52040/5204010/" class="sidebar-link">软件理论</a></li><li><a href="/langnang/52040/5204020/" class="sidebar-link">操作系统与操作环境</a></li><li><a href="/langnang/52040/5204030/" class="sidebar-link">程序设计及其语言</a></li><li><a href="/langnang/52040/5204050/" class="sidebar-link">数据库</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>软件开发环境与开发技术</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/langnang/52040/5204060/HTML/" class="sidebar-link">HTML</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/langnang/52040/5204060/CSS/" class="sidebar-heading clickable"><span>CSS</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/langnang/52040/5204060/JavaScript/" class="sidebar-heading clickable"><span>JavaScript</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/langnang/52040/5204060/ECMAScript/ES6/" class="sidebar-heading clickable"><span>ES2015/ES6</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/langnang/52040/5204060/NodeJs/" class="sidebar-heading clickable router-link-active open"><span>NodeJs</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-2"><p class="sidebar-heading open"><span>参考手册</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-3"><p class="sidebar-heading open"><span>Manual</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/API 文档.html" class="sidebar-link">API 文档 | Node.js 中文网</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/C++ 嵌入器.html" class="sidebar-link">C++ 嵌入器 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/C++ 插件.html" class="active sidebar-link">C++ 插件 | Node.js API 文档</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/C++ 插件.html#excerpt" class="sidebar-link">Excerpt</a></li></ul></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/CLI 命令行.html" class="sidebar-link">CLI 命令行 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/CommonJS 模块.html" class="sidebar-link">CommonJS 模块 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/ECMAScript 模块.html" class="sidebar-link">ECMAScript 模块 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/Error 错误.html" class="sidebar-link">Error 错误 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/Intl 国际化.html" class="sidebar-link">Intl 国际化 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/Node-API.html" class="sidebar-link">Node-API | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/assert 断言.html" class="sidebar-link">assert 断言 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/async_hooks 异步钩子.html" class="sidebar-link">async_hooks 异步钩子 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/buffer 缓冲区.html" class="sidebar-link">buffer 缓冲区 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/child_process 子进程.html" class="sidebar-link">child_process 子进程 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/cluster 集群.html" class="sidebar-link">cluster 集群 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/console 控制台.html" class="sidebar-link">console 控制台 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/crypto 加密.html" class="sidebar-link">crypto 加密 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/debugger 调试器.html" class="sidebar-link">debugger 调试器 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/deprecation 弃用.html" class="sidebar-link">deprecation 弃用 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/dgram 数据报.html" class="sidebar-link">dgram 数据报 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/dns 域名服务器.html" class="sidebar-link">dns 域名服务器 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/domain 域.html" class="sidebar-link">domain 域 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/events 事件触发器.html" class="sidebar-link">events 事件触发器 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/fs 文件系统.html" class="sidebar-link">fs 文件系统 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/global 全局变量.html" class="sidebar-link">global 全局变量 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/http 超文本传输协议.html" class="sidebar-link">http 超文本传输协议 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/http2 超文本传输协议2.0.html" class="sidebar-link">http2 超文本传输协议2.0 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/https 安全超文本传输协议.html" class="sidebar-link">https 安全超文本传输协议 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/inspector 检查器.html" class="sidebar-link">inspector 检查器 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/module 模块.html" class="sidebar-link">module 模块 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/net 网络.html" class="sidebar-link">net 网络 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/os 操作系统.html" class="sidebar-link">os 操作系统 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/package 包模块.html" class="sidebar-link">package 包模块 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/path 路径.html" class="sidebar-link">path 路径 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/perf_hooks 性能钩子.html" class="sidebar-link">perf_hooks 性能钩子 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/policy 安全策略.html" class="sidebar-link">policy 安全策略 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/process 进程.html" class="sidebar-link">process 进程 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/punycode 域名代码.html" class="sidebar-link">punycode 域名代码 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/querystring 查询字符串.html" class="sidebar-link">querystring 查询字符串 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/readline 逐行读取.html" class="sidebar-link">readline 逐行读取 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/repl 交互式解释器.html" class="sidebar-link">repl 交互式解释器 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/report 诊断报告.html" class="sidebar-link">report 诊断报告 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/stream 流.html" class="sidebar-link">stream 流 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/string_decoder 字符串解码器.html" class="sidebar-link">string_decoder 字符串解码器 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/timers 定时器.html" class="sidebar-link">timers 定时器 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/tls 安全传输层.html" class="sidebar-link">tls 安全传输层 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/trace_events 跟踪事件.html" class="sidebar-link">trace_events 跟踪事件 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/tty 终端.html" class="sidebar-link">tty 终端 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/url 网址.html" class="sidebar-link">url 网址 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/util 实用工具.html" class="sidebar-link">util 实用工具 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/v8 引擎.html" class="sidebar-link">v8 引擎 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/vm 虚拟机.html" class="sidebar-link">vm 虚拟机 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/wasi 网络汇编系统接口.html" class="sidebar-link">wasi 网络汇编系统接口 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/worker_threads 工作线程.html" class="sidebar-link">worker_threads 工作线程 | Node.js API 文档</a></li><li><a href="/langnang/52040/5204060/NodeJs/Reference/Manual/zlib 压缩.html" class="sidebar-link">zlib 压缩 | Node.js API 文档</a></li></ul></section></li></ul></section></li></ul></section></li><li><a href="/langnang/52040/5204060/React/" class="sidebar-link">React</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/langnang/52040/5204060/Vue/" class="sidebar-heading clickable"><span>Vue</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/langnang/52040/5204060/TypeScript/" class="sidebar-link">TypeScript</a></li><li><a href="/langnang/52040/5204060/WeChat/" class="sidebar-link">小程序</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>NPM Packages</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><a href="/langnang/52040/5204070/" class="sidebar-link">软件工程</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="c-插件-node-js-api-文档"><a href="#c-插件-node-js-api-文档" class="header-anchor">#</a> C++ 插件 | Node.js API 文档</h1> <blockquote><h2 id="excerpt"><a href="#excerpt" class="header-anchor">#</a> Excerpt</h2> <p>中英对照</p></blockquote> <hr> <p><a href="http://nodejs.cn/api-v12/addons/c_addons.html" target="_blank" rel="noopener noreferrer">中英对照<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>插件是用 C++ 编写的动态链接共享对象。 <a href="http://nodejs.cn/api-v12/modules.html#modules_require_id" target="_blank" rel="noopener noreferrer"><code>require()</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 函数可以将插件加载为普通的 Node.js 模块。 插件提供了 JavaScript 和 C/C++ 库之间的接口。</p> <ul><li><p>V8 提供了创建对象、调用函数等的机制。 V8 的 API 主要记录在 <code>v8.h</code> 头文件（Node.js 源代码树中的 <code>deps/v8/include/v8.h</code>）中，该文件也可<a href="http://url.nodejs.cn/FngRok" target="_blank" rel="noopener noreferrer">在线<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>获取。</p></li> <li><p><a href="http://url.nodejs.cn/QX7BGi" target="_blank" rel="noopener noreferrer">libuv<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>: 实现 Node.js 事件循环、其工作线程和平台所有异步行为的 C 库。 它还可以作为跨平台的抽象库，提供跨所有主要操作系统对许多常见系统任务的简单的、类似于 POSIX 的访问，例如与文件系统、套接字、定时器和系统事件的交互。</p></li> <li><p>内部 Node.js 库。 Node.js 自身导出了插件可以使用的 C++ API，其中最重要的是 <code>node::ObjectWrap</code> 类。</p></li> <li><p>Node.js 包括了其他静态链接库，包括 OpenSSL。 这些其他库位于 Node.js 源代码树的 <code>deps/</code> 目录中。 只有 libuv、OpenSSL、V8 和 zlib 符号被 Node.js 有目的地重新导出，并且可以被插件在不同程度上使用。 有关其他信息，请参阅<a href="http://nodejs.cn/api-v12/addons.html#addons_linking_to_libraries_included_with_node_js" target="_blank" rel="noopener noreferrer">链接到 Node.js 中包含的库<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p></li></ul> <p>以下所有示例均可<a href="http://url.nodejs.cn/DPXXU9" target="_blank" rel="noopener noreferrer">下载<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，并可用作插件的起点。</p> <h3 id="你好世界"><a href="#你好世界" class="header-anchor">#</a> 你好世界<a href="http://nodejs.cn/api-v12/addons.html#hello-world" target="_blank" rel="noopener noreferrer">#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <p><a href="http://nodejs.cn/api-v12/addons/hello_world.html" target="_blank" rel="noopener noreferrer">中英对照<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>这个 &quot;Hello world&quot; 示例是一个简单的插件，用 C++ 编写，相当于以下 JavaScript 代码：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>module.exports.hello = () =&gt; 'world';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>首先，创建文件 <code>hello.cc</code>：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// hello.cc
+#include &lt;node.h&gt;
+
+namespace demo {
+
+using v8::FunctionCallbackInfo;
+using v8::Isolate;
+using v8::Local;
+using v8::NewStringType;
+using v8::Object;
+using v8::String;
+using v8::Value;
+
+void Method(const FunctionCallbackInfo&lt;Value&gt;&amp; args) {
+  Isolate* isolate = args.GetIsolate();
+  args.GetReturnValue().Set(String::NewFromUtf8(
+      isolate, &quot;world&quot;, NewStringType::kNormal).ToLocalChecked());
+}
+
+void Initialize(Local&lt;Object&gt; exports) {
+  NODE_SET_METHOD(exports, &quot;hello&quot;, Method);
+}
+
+NODE_MODULE(NODE_GYP_MODULE_NAME, Initialize)
+
+}  // namespace demo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p>所有 Node.js 插件都必须按照以下模式导出初始化函数：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>void Initialize(Local&lt;Object&gt; exports);
+NODE_MODULE(NODE_GYP_MODULE_NAME, Initialize)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><code>NODE_MODULE</code> 后面没有分号，因为它不是函数（参见 <code>node.h</code>）。</p> <p><code>module_name</code> 必须与最终二进制文件的文件名匹配（不包括 <code>.node</code> 后缀）。</p> <p>在 <code>hello.cc</code> 示例中，初始化函数为 <code>Initialize</code>，插件模块名称为 <code>addon</code>。</p> <p>使用 <code>node-gyp</code> 构建插件时，使用宏 <code>NODE_GYP_MODULE_NAME</code> 作为 <code>NODE_MODULE()</code> 的第一个参数将确保最终二进制文件的名称将传给 <code>NODE_MODULE()</code>。</p> <h4 id="上下文感知的插件"><a href="#上下文感知的插件" class="header-anchor">#</a> 上下文感知的插件<a href="http://nodejs.cn/api-v12/addons.html#context-aware-addons" target="_blank" rel="noopener noreferrer">#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <p><a href="http://nodejs.cn/api-v12/addons/context_aware_addons.html" target="_blank" rel="noopener noreferrer">中英对照<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>在某些环境中，可能需要在多个上下文中多次加载 Node.js 插件。 例如，<a href="http://url.nodejs.cn/Fvw7Aa" target="_blank" rel="noopener noreferrer">Electron<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 运行时在单个进程中运行多个 Node.js 实例。 每个实例都有自己的 <code>require()</code> 缓存，因此当通过 <code>require()</code> 加载时，每个实例都需要原生插件才能正确运行。</p> <p>可以使用宏 <code>NODE_MODULE_INITIALIZER</code> 构建上下文感知插件，该宏扩展为 Node.js 在加载插件时期望找到的函数的名称。 因此可以像下面的示例一样初始化插件：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>using namespace v8;
+
+extern &quot;C&quot; NODE_MODULE_EXPORT void
+NODE_MODULE_INITIALIZER(Local&lt;Object&gt; exports,
+                        Local&lt;Value&gt; module,
+                        Local&lt;Context&gt; context) {
+  /* 在此处执行插件初始化步骤。 */
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>另一种选择是使用宏 <code>NODE_MODULE_INIT()</code>，它也将构建上下文感知插件。 与 <code>NODE_MODULE()</code> 不同，<code>NODE_MODULE()</code> 用于围绕给定的 addon 初始化函数构造插件，而 <code>NODE_MODULE_INIT()</code> 用作此类初始化器的声明，然后是函数体。</p> <p>在调用 <code>NODE_MODULE_INIT()</code> 之后，可以在函数体内使用以下三个变量：</p> <ul><li><code>Local&lt;Object&gt; exports</code>，</li> <li><code>Local&lt;Value&gt; module</code>，和</li> <li><code>Local&lt;Context&gt; context</code></li></ul> <p>选择构建上下文感知插件承担着仔细管理全局静态数据的责任。 由于插件可能被多次加载，甚至可能来自不同的线程，因此必须适当保护存储在插件中的任何全局静态数据，并且不得包含对 JavaScript 对象的任何持久引用。 这样做的原因是 JavaScript 对象仅在上下文中有效，并且当从错误的上下文或从与创建它们的线程不同的线程访问时，可能会导致崩溃。</p> <p>通过执行以下步骤，可以构造上下文感知插件以避免全局静态数据：</p> <ul><li><p>定义一个类，该类将保存每个插件实例数据并具有该形式的静态成员</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>static void DeleteInstance(void* data) {
+  // 将 `data` 转换为类的实例并将其删除。
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>在插件初始值设定项中堆分配此类的实例。 这可以使用 <code>new</code> 关键字来完成。</p></li> <li><p>调用 <code>node::AddEnvironmentCleanupHook()</code>，将上面创建的实例和指向 <code>DeleteInstance()</code> 的指针传给它。 这将确保在拆除环境时删除实例。</p></li> <li><p>将类的实例存储在 <code>v8::External</code> 中，并且</p></li> <li><p>通过将 <code>v8::External</code> 传给创建原生支持的 JavaScript 函数的 <code>v8::FunctionTemplate::New()</code> 或 <code>v8::Function::New()</code>，将 <code>v8::External</code> 传给所有暴露给 JavaScript 的方法。 <code>v8::FunctionTemplate::New()</code> 或 <code>v8::Function::New()</code> 的第三个参数接受 <code>v8::External</code> 并使用 <code>v8::FunctionCallbackInfo::Data()</code> 方法使其在原生回调中可用。</p></li></ul> <p>这将确保每个插件实例数据到达可以从 JavaScript 调用的每个绑定。 每个插件实例数据还必须传入到插件可能创建的任何异步回调中。</p> <p>以下示例说明了上下文感知插件的实现：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#include &lt;node.h&gt;
+
+using namespace v8;
+
+class AddonData {
+ public:
+  explicit AddonData(Isolate* isolate):
+      call_count(0) {
+    // 确保在环境清理时删除此每个插件实例的数据。
+    node::AddEnvironmentCleanupHook(isolate, DeleteInstance, this);
+  }
+
+  // 每个插件的数据。
+  int call_count;
+
+  static void DeleteInstance(void* data) {
+    delete static_cast&lt;AddonData*&gt;(data);
+  }
+};
+
+static void Method(const v8::FunctionCallbackInfo&lt;v8::Value&gt;&amp; info) {
+  // 检索每个插件实例的数据。
+  AddonData* data =
+      reinterpret_cast&lt;AddonData*&gt;(info.Data().As&lt;External&gt;()-&gt;Value());
+  data-&gt;call_count++;
+  info.GetReturnValue().Set((double)data-&gt;call_count);
+}
+
+// 将此插件初始化为上下文感知。
+NODE_MODULE_INIT(/* exports, module, context */) {
+  Isolate* isolate = context-&gt;GetIsolate();
+
+  // 为该插件实例创建新的 `AddonData` 实例，
+  // 并将其生命周期与 Node.js 环境的生命周期联系起来。
+  AddonData* data = new AddonData(isolate);
+
+  // 将数据包装在 `v8::External` 中，
+  // 以便可以将其传给暴露的方法。
+  Local&lt;External&gt; external = External::New(isolate, data);
+
+  // 将方法 `Method` 暴露给 JavaScript，
+  // 并通过将 `external` 作为第三个参数传给 `FunctionTemplate` 构造函数
+  // 来确保它接收到上面创建的每个插件实例的数据。
+  exports-&gt;Set(context,
+               String::NewFromUtf8(isolate, &quot;method&quot;, NewStringType::kNormal)
+                  .ToLocalChecked(),
+               FunctionTemplate::New(isolate, Method, external)
+                  -&gt;GetFunction(context).ToLocalChecked()).FromJust();
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br></div></div><h5 id="工作线程的支持"><a href="#工作线程的支持" class="header-anchor">#</a> 工作线程的支持<a href="http://nodejs.cn/api-v12/addons.html#worker-support" target="_blank" rel="noopener noreferrer">#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h5> <p><a href="http://nodejs.cn/api-v12/addons/worker_support.html" target="_blank" rel="noopener noreferrer">中英对照<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>为了从多个 Node.js 环境（例如主线程和工作线程）加载，插件需要：</p> <ul><li>如上所述使用 <code>NODE_MODULE_INIT()</code> 声明为上下文感知</li></ul> <p>为了支持 <a href="http://nodejs.cn/api-v12/worker_threads.html#worker_threads_class_worker" target="_blank" rel="noopener noreferrer"><code>Worker</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 线程，插件需要清理它们可能在此类线程存在时分配的任何资源。 这可以通过使用 <code>AddEnvironmentCleanupHook()</code> 函数来实现：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>void AddEnvironmentCleanupHook(v8::Isolate* isolate,
+                               void (*fun)(void* arg),
+                               void* arg);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>此函数添加了一个钩子，该钩子将在给定的 Node.js 实例关闭之前运行。 如有必要，可以在使用具有相同签名的 <code>RemoveEnvironmentCleanupHook()</code> 运行这些钩子之前将其删除。 回调按后进先出的顺序运行。</p> <p>如有必要，还有一对额外的 <code>AddEnvironmentCleanupHook()</code> 和 <code>RemoveEnvironmentCleanupHook()</code> 重载，其中清理钩子采用回调函数。 这可用于关闭异步资源，例如插件注册的任何 libuv 句柄。</p> <p>以下 <code>addon.cc</code> 使用 <code>AddEnvironmentCleanupHook</code>：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// addon.cc
+#include &lt;assert.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;node.h&gt;
+
+using node::AddEnvironmentCleanupHook;
+using v8::HandleScope;
+using v8::Isolate;
+using v8::Local;
+using v8::Object;
+
+// 注意：在实际应用程序中，不要依赖静态/全局数据。
+static char cookie[] = &quot;yum yum&quot;;
+static int cleanup_cb1_called = 0;
+static int cleanup_cb2_called = 0;
+
+static void cleanup_cb1(void* arg) {
+  Isolate* isolate = static_cast&lt;Isolate*&gt;(arg);
+  HandleScope scope(isolate);
+  Local&lt;Object&gt; obj = Object::New(isolate);
+  assert(!obj.IsEmpty());  // 断言 VM 仍旧存活
+  assert(obj-&gt;IsObject());
+  cleanup_cb1_called++;
+}
+
+static void cleanup_cb2(void* arg) {
+  assert(arg == static_cast&lt;void*&gt;(cookie));
+  cleanup_cb2_called++;
+}
+
+static void sanity_check(void*) {
+  assert(cleanup_cb1_called == 1);
+  assert(cleanup_cb2_called == 1);
+}
+
+// 将此插件初始化为上下文感知。
+NODE_MODULE_INIT(/* exports, module, context */) {
+  Isolate* isolate = context-&gt;GetIsolate();
+
+  AddEnvironmentCleanupHook(isolate, sanity_check, nullptr);
+  AddEnvironmentCleanupHook(isolate, cleanup_cb2, cookie);
+  AddEnvironmentCleanupHook(isolate, cleanup_cb1, isolate);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><p>通过运行在 JavaScript 中进行测试：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// test.js
+require('./build/Release/addon');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="构建"><a href="#构建" class="header-anchor">#</a> 构建<a href="http://nodejs.cn/api-v12/addons.html#building" target="_blank" rel="noopener noreferrer">#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <p><a href="http://nodejs.cn/api-v12/addons/building.html" target="_blank" rel="noopener noreferrer">中英对照<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>编写源代码后，必须将其编译为二进制 <code>addon.node</code> 文件。 为此，请在项目的顶层创建名为 <code>binding.gyp</code> 的文件，使用类似 JSON 的格式描述模块的构建配置。 该文件由 <a href="http://url.nodejs.cn/kLHA2r" target="_blank" rel="noopener noreferrer">node-gyp<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 使用，这是一个专门为编译 Node.js 插件而编写的工具。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;targets&quot;: [
+    {
+      &quot;target_name&quot;: &quot;addon&quot;,
+      &quot;sources&quot;: [ &quot;hello.cc&quot; ]
+    }
+  ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><code>node-gyp</code> 实用工具的一个版本作为 <code>npm</code> 的一部分与 Node.js 捆绑和分发。 此版本不直接提供给开发人员使用，仅旨在支持使用 <code>npm install</code> 命令编译和安装插件的能力。 希望直接使用 <code>node-gyp</code> 的开发人员可以使用命令 <code>npm install -g node-gyp</code> 安装它。 有关更多信息，包括特定于平台的要求，请参阅 <code>node-gyp</code> <a href="http://url.nodejs.cn/QTF5Te" target="_blank" rel="noopener noreferrer">安装说明<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <p>创建 <code>binding.gyp</code> 文件后，使用 <code>node-gyp configure</code> 为当前平台生成适当的项目构建文件。 这将在 <code>build/</code> 目录中生成 <code>Makefile</code>（在 Unix 平台上）或 <code>vcxproj</code> 文件（在 Windows 上）。</p> <p>接下来，调用 <code>node-gyp build</code> 命令生成编译后的 <code>addon.node</code> 文件。 这将被放入 <code>build/Release/</code> 目录。</p> <p>当使用 <code>npm install</code> 安装 Node.js 插件时，npm 使用它自己的 <code>node-gyp</code> 捆绑版本来执行相同的一组操作，按需为用户平台生成插件的编译版本。</p> <p>构建完成后，可以通过将 <a href="http://nodejs.cn/api-v12/modules.html#modules_require_id" target="_blank" rel="noopener noreferrer"><code>require()</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 指向构建的 <code>addon.node</code> 模块在 Node.js 中使用二进制插件：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// hello.js
+const addon = require('./build/Release/addon');
+
+console.log(addon.hello());
+// 打印: 'world'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>因为编译的插件二进制文件的确切路径可能会因编译方式而异（即有时它可能在 <code>./build/Debug/</code> 中），插件可以使用<a href="http://url.nodejs.cn/WHKP77" target="_blank" rel="noopener noreferrer">绑定<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>包来加载已编译的模块。</p> <p>虽然 <code>bindings</code> 包实现在如何定位插件模块方面更为复杂，但它本质上使用了类似于以下内容的 <code>try…catch</code> 模式：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>try {
+  return require('./build/Release/addon.node');
+} catch (err) {
+  return require('./build/Debug/addon.node');
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="链接到-node-js-自带的库"><a href="#链接到-node-js-自带的库" class="header-anchor">#</a> 链接到 Node.js 自带的库<a href="http://nodejs.cn/api-v12/addons.html#linking-to-libraries-included-with-nodejs" target="_blank" rel="noopener noreferrer">#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <p><a href="http://nodejs.cn/api-v12/addons/linking_to_libraries_included_with_node_js.html" target="_blank" rel="noopener noreferrer">中英对照<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>Node.js 使用静态链接库，例如 V8、libuv 和 OpenSSL。 所有插件都需要链接到 V8，也可以链接到任何其他依赖项。 通常，这就像包含适当的 <code>#include &lt;...&gt;</code> 语句（例如 <code>#include &lt;v8.h&gt;</code>）一样简单，<code>node-gyp</code> 将自动定位适当的头文件。 但是，有一些注意事项需要注意：</p> <ul><li><p>当 <code>node-gyp</code> 运行时，它会检测 Node.js 的特定发布版本并下载完整的源代码压缩包或仅下载头文件。 如果下载了完整的源代码，插件将可以完全访问完整的 Node.js 依赖项集。 但是，如果只下载 Node.js 头文件，则只有 Node.js 导出的符号可用。</p></li> <li><p><code>node-gyp</code> 可以使用指向本地 Node.js 源镜像的 <code>--nodedir</code> 标志运行。 使用此选项，插件将可以访问完整的依赖项集。</p></li></ul> <h4 id="使用-require-加载插件"><a href="#使用-require-加载插件" class="header-anchor">#</a> 使用 require() 加载插件<a href="http://nodejs.cn/api-v12/addons.html#loading-addons-using-require" target="_blank" rel="noopener noreferrer">#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <p><a href="http://nodejs.cn/api-v12/addons/loading_addons_using_require.html" target="_blank" rel="noopener noreferrer">中英对照<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>已编译的插件二进制文件的文件扩展名是 <code>.node</code>（与 <code>.dll</code> 或 <code>.so</code> 相反）。 <a href="http://nodejs.cn/api-v12/modules.html#modules_require_id" target="_blank" rel="noopener noreferrer"><code>require()</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 函数用于查找具有 <code>.node</code> 文件扩展名的文件并将它们初始化为动态链接库。</p> <p>调用 <a href="http://nodejs.cn/api-v12/modules.html#modules_require_id" target="_blank" rel="noopener noreferrer"><code>require()</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 时，通常可以省略 <code>.node</code> 扩展名，Node.js 仍会找到并初始化插件。 但是，有一个注意事项，Node.js 将首先尝试定位和加载碰巧共享相同基本名称的模块或 JavaScript 文件。 例如，如果在与二进制 <code>addon.node</code> 相同的目录中有一个文件 <code>addon.js</code>，那么 <a href="http://nodejs.cn/api-v12/modules.html#modules_require_id" target="_blank" rel="noopener noreferrer"><code>require('addon')</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 将优先于 <code>addon.js</code> 文件并加载它。</p> <h3 id="node-js-的原生抽象"><a href="#node-js-的原生抽象" class="header-anchor">#</a> Node.js 的原生抽象<a href="http://nodejs.cn/api-v12/addons.html#native-abstractions-for-nodejs" target="_blank" rel="noopener noreferrer">#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <p><a href="http://nodejs.cn/api-v12/addons/native_abstractions_for_node_js.html" target="_blank" rel="noopener noreferrer">中英对照<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>本文档中说明的每个示例都直接使用 Node.js 和 V8 API 来实现插件。 从一个 V8 版本到下一个版本（以及一个主要的 Node.js 版本到下一个版本），V8 API 可能并且已经发生了巨大的变化。 每次更改时，插件可能需要更新和重新编译才能继续运行。 Node.js 发布计划旨在最小化此类更改的频率和影响，但 Node.js 几乎无法确保 V8 API 的稳定性。</p> <p><a href="http://url.nodejs.cn/TMQ3WL" target="_blank" rel="noopener noreferrer">Node.js 的原生抽象<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>（或 <code>nan</code>）提供了一组工具，建议插件开发人员使用这些工具来保持 V8 和 Node.js 过去和未来版本之间的兼容性。 有关如何使用它的说明，请参见 <code>nan</code> <a href="http://url.nodejs.cn/BmESTr" target="_blank" rel="noopener noreferrer">示例<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <h3 id="n-api"><a href="#n-api" class="header-anchor">#</a> N-API<a href="http://nodejs.cn/api-v12/addons.html#n-api" target="_blank" rel="noopener noreferrer">#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <p><a href="http://nodejs.cn/api-v12/addons/n_api.html" target="_blank" rel="noopener noreferrer">中英对照<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>它独立于底层 JavaScript 运行时（例如 V8），并作为 Node.js 自身的一部分进行维护。 此 API 将在 Node.js 的各个版本中保持稳定的应用程序二进制接口 (ABI)。 它旨在将插件与底层 JavaScript 引擎中的更改隔离开来，并允许为一个版本编译的模块无需重新编译即可在更高版本的 Node.js 上运行。 插件是使用本文档中概述的相同方法/工具（node-gyp 等）构建/打包的。唯一的区别是原生代码使用的 API 集。</p> <p>所有其他指令保持不变。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 
+#include &lt;node_api.h&gt;
+
+namespace demo {
+
+napi_value Method(napi_env env, napi_callback_info args) {
+  napi_value greeting;
+  napi_status status;
+
+  status = napi_create_string_utf8(env, &quot;world&quot;, NAPI_AUTO_LENGTH, &amp;greeting);
+  if (status != napi_ok) return nullptr;
+  return greeting;
+}
+
+napi_value init(napi_env env, napi_value exports) {
+  napi_status status;
+  napi_value fn;
+
+  status = napi_create_function(env, nullptr, 0, Method, nullptr, &amp;fn);
+  if (status != napi_ok) return nullptr;
+
+  status = napi_set_named_property(env, exports, &quot;hello&quot;, fn);
+  if (status != napi_ok) return nullptr;
+  return exports;
+}
+
+NAPI_MODULE(NODE_GYP_MODULE_NAME, init)
+
+}  // namespace demo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><h3 id="插件示例"><a href="#插件示例" class="header-anchor">#</a> 插件示例<a href="http://nodejs.cn/api-v12/addons.html#addon-examples" target="_blank" rel="noopener noreferrer">#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <p><a href="http://nodejs.cn/api-v12/addons/addon_examples.html" target="_blank" rel="noopener noreferrer">中英对照<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>以下是一些旨在帮助开发人员入门的示例插件。 这些示例使用 V8 API。 请参阅在线 <a href="http://url.nodejs.cn/FngRok" target="_blank" rel="noopener noreferrer">V8 手册<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>以获取有关各种 V8 调用的帮助，以及 V8 的<a href="http://url.nodejs.cn/k6sAad" target="_blank" rel="noopener noreferrer">嵌入器指南<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>以获取对所使用的几个概念（例如句柄、作用域、函数模板等）的解释。</p> <p>这些示例中的每一个都使用以下 <code>binding.gyp</code> 文件：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;targets&quot;: [
+    {
+      &quot;target_name&quot;: &quot;addon&quot;,
+      &quot;sources&quot;: [ &quot;addon.cc&quot; ]
+    }
+  ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>如果有多个 <code>.cc</code> 文件，只需将附加文件名添加到 <code>sources</code> 数组：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&quot;sources&quot;: [&quot;addon.cc&quot;, &quot;myexample.cc&quot;]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>一旦 <code>binding.gyp</code> 文件准备就绪，就可以使用 <code>node-gyp</code> 配置和构建示例插件：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$ node-gyp configure build
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="函数的参数"><a href="#函数的参数" class="header-anchor">#</a> 函数的参数<a href="http://nodejs.cn/api-v12/addons.html#function-arguments" target="_blank" rel="noopener noreferrer">#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <p><a href="http://nodejs.cn/api-v12/addons/function_arguments.html" target="_blank" rel="noopener noreferrer">中英对照<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>插件通常会暴露可以从 Node.js 中运行的 JavaScript 访问的对象和函数。 当从 JavaScript 调用函数时，输入参数和返回值必须映射到 C/C++ 代码和从 C/C++ 代码映射。</p> <p>以下示例说明了如何读取从 JavaScript 传入的函数参数以及如何返回结果：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// addon.cc
+#include &lt;node.h&gt;
+
+namespace demo {
+
+using v8::Exception;
+using v8::FunctionCallbackInfo;
+using v8::Isolate;
+using v8::Local;
+using v8::NewStringType;
+using v8::Number;
+using v8::Object;
+using v8::String;
+using v8::Value;
+
+// 这是 &quot;add&quot; 方法的实现
+// 输入参数使用
+// const FunctionCallbackInfo&lt;Value&gt;&amp; args 结构传入
+void Add(const FunctionCallbackInfo&lt;Value&gt;&amp; args) {
+  Isolate* isolate = args.GetIsolate();
+
+  // 检查传入的参数数量。
+  if (args.Length() &lt; 2) {
+    // 抛出传回 JavaScript 的错误
+    isolate-&gt;ThrowException(Exception::TypeError(
+        String::NewFromUtf8(isolate,
+                            &quot;Wrong number of arguments&quot;,
+                            NewStringType::kNormal).ToLocalChecked()));
+    return;
+  }
+
+  // 检查参数类型
+  if (!args[0]-&gt;IsNumber() || !args[1]-&gt;IsNumber()) {
+    isolate-&gt;ThrowException(Exception::TypeError(
+        String::NewFromUtf8(isolate,
+                            &quot;Wrong arguments&quot;,
+                            NewStringType::kNormal).ToLocalChecked()));
+    return;
+  }
+
+  // 执行操作
+  double value =
+      args[0].As&lt;Number&gt;()-&gt;Value() + args[1].As&lt;Number&gt;()-&gt;Value();
+  Local&lt;Number&gt; num = Number::New(isolate, value);
+
+  // 设置返回值
+  // （使用传入的 FunctionCallbackInfo&lt;Value&gt;&amp;）
+  args.GetReturnValue().Set(num);
+}
+
+void Init(Local&lt;Object&gt; exports) {
+  NODE_SET_METHOD(exports, &quot;add&quot;, Add);
+}
+
+NODE_MODULE(NODE_GYP_MODULE_NAME, Init)
+
+}  // namespace demo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br></div></div><p>编译后，可以在 Node.js 中加载和使用示例插件：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// test.js
+const addon = require('./build/Release/addon');
+
+console.log('This should be eight:', addon.add(3, 5));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="回调"><a href="#回调" class="header-anchor">#</a> 回调<a href="http://nodejs.cn/api-v12/addons.html#callbacks" target="_blank" rel="noopener noreferrer">#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <p><a href="http://nodejs.cn/api-v12/addons/callbacks.html" target="_blank" rel="noopener noreferrer">中英对照<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>插件中的常见做法是将 JavaScript 函数传给 C++ 函数并从那里执行它们。 以下示例说明了如何调用此类回调：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// addon.cc
+#include &lt;node.h&gt;
+
+namespace demo {
+
+using v8::Context;
+using v8::Function;
+using v8::FunctionCallbackInfo;
+using v8::Isolate;
+using v8::Local;
+using v8::NewStringType;
+using v8::Null;
+using v8::Object;
+using v8::String;
+using v8::Value;
+
+void RunCallback(const FunctionCallbackInfo&lt;Value&gt;&amp; args) {
+  Isolate* isolate = args.GetIsolate();
+  Local&lt;Context&gt; context = isolate-&gt;GetCurrentContext();
+  Local&lt;Function&gt; cb = Local&lt;Function&gt;::Cast(args[0]);
+  const unsigned argc = 1;
+  Local&lt;Value&gt; argv[argc] = {
+      String::NewFromUtf8(isolate,
+                          &quot;hello world&quot;,
+                          NewStringType::kNormal).ToLocalChecked() };
+  cb-&gt;Call(context, Null(isolate), argc, argv).ToLocalChecked();
+}
+
+void Init(Local&lt;Object&gt; exports, Local&lt;Object&gt; module) {
+  NODE_SET_METHOD(module, &quot;exports&quot;, RunCallback);
+}
+
+NODE_MODULE(NODE_GYP_MODULE_NAME, Init)
+
+}  // namespace demo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><p>此示例使用 <code>Init()</code> 的双参数形式，它接收完整的 <code>module</code> 对象作为第二个参数。 这允许插件使用单个函数完全覆盖 <code>exports</code>，而不是将该函数添加为 <code>exports</code> 的属性。</p> <p>要测试它，则运行以下 JavaScript：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// test.js
+const addon = require('./build/Release/addon');
+
+addon((msg) =&gt; {
+  console.log(msg);
+// 打印: 'hello world'
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>在这个例子中，回调函数是同步调用的。</p> <h4 id="对象工厂"><a href="#对象工厂" class="header-anchor">#</a> 对象工厂<a href="http://nodejs.cn/api-v12/addons.html#object-factory" target="_blank" rel="noopener noreferrer">#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <p><a href="http://nodejs.cn/api-v12/addons/object_factory.html" target="_blank" rel="noopener noreferrer">中英对照<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>插件可以从 C++ 函数中创建和返回新对象，如下例所示。 创建并返回带有属性 <code>msg</code> 的对象，该属性与传给 <code>createObject()</code> 的字符串相呼应：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// addon.cc
+#include &lt;node.h&gt;
+
+namespace demo {
+
+using v8::Context;
+using v8::FunctionCallbackInfo;
+using v8::Isolate;
+using v8::Local;
+using v8::NewStringType;
+using v8::Object;
+using v8::String;
+using v8::Value;
+
+void CreateObject(const FunctionCallbackInfo&lt;Value&gt;&amp; args) {
+  Isolate* isolate = args.GetIsolate();
+  Local&lt;Context&gt; context = isolate-&gt;GetCurrentContext();
+
+  Local&lt;Object&gt; obj = Object::New(isolate);
+  obj-&gt;Set(context,
+           String::NewFromUtf8(isolate,
+                               &quot;msg&quot;,
+                               NewStringType::kNormal).ToLocalChecked(),
+                               args[0]-&gt;ToString(context).ToLocalChecked())
+           .FromJust();
+
+  args.GetReturnValue().Set(obj);
+}
+
+void Init(Local&lt;Object&gt; exports, Local&lt;Object&gt; module) {
+  NODE_SET_METHOD(module, &quot;exports&quot;, CreateObject);
+}
+
+NODE_MODULE(NODE_GYP_MODULE_NAME, Init)
+
+}  // namespace demo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><p>在 JavaScript 中测试它：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// test.js
+const addon = require('./build/Release/addon');
+
+const obj1 = addon('hello');
+const obj2 = addon('world');
+console.log(obj1.msg, obj2.msg);
+// 打印: 'hello world'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h4 id="函数工厂"><a href="#函数工厂" class="header-anchor">#</a> 函数工厂<a href="http://nodejs.cn/api-v12/addons.html#function-factory" target="_blank" rel="noopener noreferrer">#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <p><a href="http://nodejs.cn/api-v12/addons/function_factory.html" target="_blank" rel="noopener noreferrer">中英对照<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>另一个常见的场景是创建封装 C++ 函数并将它们返回给 JavaScript 的 JavaScript 函数：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// addon.cc
+#include &lt;node.h&gt;
+
+namespace demo {
+
+using v8::Context;
+using v8::Function;
+using v8::FunctionCallbackInfo;
+using v8::FunctionTemplate;
+using v8::Isolate;
+using v8::Local;
+using v8::NewStringType;
+using v8::Object;
+using v8::String;
+using v8::Value;
+
+void MyFunction(const FunctionCallbackInfo&lt;Value&gt;&amp; args) {
+  Isolate* isolate = args.GetIsolate();
+  args.GetReturnValue().Set(String::NewFromUtf8(
+      isolate, &quot;hello world&quot;, NewStringType::kNormal).ToLocalChecked());
+}
+
+void CreateFunction(const FunctionCallbackInfo&lt;Value&gt;&amp; args) {
+  Isolate* isolate = args.GetIsolate();
+
+  Local&lt;Context&gt; context = isolate-&gt;GetCurrentContext();
+  Local&lt;FunctionTemplate&gt; tpl = FunctionTemplate::New(isolate, MyFunction);
+  Local&lt;Function&gt; fn = tpl-&gt;GetFunction(context).ToLocalChecked();
+
+  // 省略它以使其匿名
+  fn-&gt;SetName(String::NewFromUtf8(
+      isolate, &quot;theFunction&quot;, NewStringType::kNormal).ToLocalChecked());
+
+  args.GetReturnValue().Set(fn);
+}
+
+void Init(Local&lt;Object&gt; exports, Local&lt;Object&gt; module) {
+  NODE_SET_METHOD(module, &quot;exports&quot;, CreateFunction);
+}
+
+NODE_MODULE(NODE_GYP_MODULE_NAME, Init)
+
+}  // namespace demo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><p>去测试：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// test.js
+const addon = require('./build/Release/addon');
+
+const fn = addon();
+console.log(fn());
+// 打印: 'hello world'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="封装-c-对象"><a href="#封装-c-对象" class="header-anchor">#</a> 封装 C++ 对象<a href="http://nodejs.cn/api-v12/addons.html#wrapping-c-objects" target="_blank" rel="noopener noreferrer">#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <p><a href="http://nodejs.cn/api-v12/addons/wrapping_c_objects.html" target="_blank" rel="noopener noreferrer">中英对照<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>还可以以允许使用 JavaScript <code>new</code> 运算符创建新实例的方式封装 C++ 对象/类：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// addon.cc
+#include &lt;node.h&gt;
+#include &quot;myobject.h&quot;
+
+namespace demo {
+
+using v8::Local;
+using v8::Object;
+
+void InitAll(Local&lt;Object&gt; exports) {
+  MyObject::Init(exports);
+}
+
+NODE_MODULE(NODE_GYP_MODULE_NAME, InitAll)
+
+}  // namespace demo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>然后，在 <code>myobject.h</code> 中，封装类继承自 <code>node::ObjectWrap</code>：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// myobject.h
+#ifndef MYOBJECT_H
+#define MYOBJECT_H
+
+#include &lt;node.h&gt;
+#include &lt;node_object_wrap.h&gt;
+
+namespace demo {
+
+class MyObject : public node::ObjectWrap {
+ public:
+  static void Init(v8::Local&lt;v8::Object&gt; exports);
+
+ private:
+  explicit MyObject(double value = 0);
+  ~MyObject();
+
+  static void New(const v8::FunctionCallbackInfo&lt;v8::Value&gt;&amp; args);
+  static void PlusOne(const v8::FunctionCallbackInfo&lt;v8::Value&gt;&amp; args);
+
+  double value_;
+};
+
+}  // namespace demo
+
+#endif
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p>在 <code>myobject.cc</code> 中，实现要暴露的各种方法。 下面，方法 <code>plusOne()</code> 通过将其添加到构造函数的原型中来暴露：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// myobject.cc
+#include &quot;myobject.h&quot;
+
+namespace demo {
+
+using v8::Context;
+using v8::Function;
+using v8::FunctionCallbackInfo;
+using v8::FunctionTemplate;
+using v8::Isolate;
+using v8::Local;
+using v8::NewStringType;
+using v8::Number;
+using v8::Object;
+using v8::ObjectTemplate;
+using v8::String;
+using v8::Value;
+
+MyObject::MyObject(double value) : value_(value) {
+}
+
+MyObject::~MyObject() {
+}
+
+void MyObject::Init(Local&lt;Object&gt; exports) {
+  Isolate* isolate = exports-&gt;GetIsolate();
+  Local&lt;Context&gt; context = isolate-&gt;GetCurrentContext();
+
+  Local&lt;ObjectTemplate&gt; addon_data_tpl = ObjectTemplate::New(isolate);
+  addon_data_tpl-&gt;SetInternalFieldCount(1);  // MyObject::New() 的 1 个字段
+  Local&lt;Object&gt; addon_data =
+      addon_data_tpl-&gt;NewInstance(context).ToLocalChecked();
+
+  // 准备构造函数模板
+  Local&lt;FunctionTemplate&gt; tpl = FunctionTemplate::New(isolate, New, addon_data);
+  tpl-&gt;SetClassName(String::NewFromUtf8(
+      isolate, &quot;MyObject&quot;, NewStringType::kNormal).ToLocalChecked());
+  tpl-&gt;InstanceTemplate()-&gt;SetInternalFieldCount(1);
+
+  // 原型
+  NODE_SET_PROTOTYPE_METHOD(tpl, &quot;plusOne&quot;, PlusOne);
+
+  Local&lt;Function&gt; constructor = tpl-&gt;GetFunction(context).ToLocalChecked();
+  addon_data-&gt;SetInternalField(0, constructor);
+  exports-&gt;Set(context, String::NewFromUtf8(
+      isolate, &quot;MyObject&quot;, NewStringType::kNormal).ToLocalChecked(),
+               constructor).FromJust();
+}
+
+void MyObject::New(const FunctionCallbackInfo&lt;Value&gt;&amp; args) {
+  Isolate* isolate = args.GetIsolate();
+  Local&lt;Context&gt; context = isolate-&gt;GetCurrentContext();
+
+  if (args.IsConstructCall()) {
+    // 作为构造函数调用：`new MyObject(...)`
+    double value = args[0]-&gt;IsUndefined() ?
+        0 : args[0]-&gt;NumberValue(context).FromMaybe(0);
+    MyObject* obj = new MyObject(value);
+    obj-&gt;Wrap(args.This());
+    args.GetReturnValue().Set(args.This());
+  } else {
+    // 作为普通函数 `MyObject(...)` 调用，变成构造调用。
+    const int argc = 1;
+    Local&lt;Value&gt; argv[argc] = { args[0] };
+    Local&lt;Function&gt; cons =
+        args.Data().As&lt;Object&gt;()-&gt;GetInternalField(0).As&lt;Function&gt;();
+    Local&lt;Object&gt; result =
+        cons-&gt;NewInstance(context, argc, argv).ToLocalChecked();
+    args.GetReturnValue().Set(result);
+  }
+}
+
+void MyObject::PlusOne(const FunctionCallbackInfo&lt;Value&gt;&amp; args) {
+  Isolate* isolate = args.GetIsolate();
+
+  MyObject* obj = ObjectWrap::Unwrap&lt;MyObject&gt;(args.Holder());
+  obj-&gt;value_ += 1;
+
+  args.GetReturnValue().Set(Number::New(isolate, obj-&gt;value_));
+}
+
+}  // namespace demo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br></div></div><p>要构建此示例，必须将 <code>myobject.cc</code> 文件添加到 <code>binding.gyp</code>：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;targets&quot;: [
+    {
+      &quot;target_name&quot;: &quot;addon&quot;,
+      &quot;sources&quot;: [
+        &quot;addon.cc&quot;,
+        &quot;myobject.cc&quot;
+      ]
+    }
+  ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>测试它：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// test.js
+const addon = require('./build/Release/addon');
+
+const obj = new addon.MyObject(10);
+console.log(obj.plusOne());
+// 打印: 11
+console.log(obj.plusOne());
+// 打印: 12
+console.log(obj.plusOne());
+// 打印: 13
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>当对象被垃圾收集时，封装器对象的析构函数将运行。 对于析构函数测试，可以使用命令行标志来强制进行垃圾回收。 这些标志由底层 V8 JavaScript 引擎提供。 它们可能会随时更改或删除。 Node.js 或 V8 没有记录它们，并且它们不应该在测试之外使用。</p> <h4 id="封装对象的工厂"><a href="#封装对象的工厂" class="header-anchor">#</a> 封装对象的工厂<a href="http://nodejs.cn/api-v12/addons.html#factory-of-wrapped-objects" target="_blank" rel="noopener noreferrer">#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <p><a href="http://nodejs.cn/api-v12/addons/factory_of_wrapped_objects.html" target="_blank" rel="noopener noreferrer">中英对照<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>另外，可以使用工厂模式来避免使用 JavaScript <code>new</code> 运算符显式创建对象实例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const obj = addon.createObject();
+// 而不是：
+// const obj = new addon.Object();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>首先，<code>createObject()</code> 方法在 <code>addon.cc</code> 中实现：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// addon.cc
+#include &lt;node.h&gt;
+#include &quot;myobject.h&quot;
+
+namespace demo {
+
+using v8::FunctionCallbackInfo;
+using v8::Isolate;
+using v8::Local;
+using v8::Object;
+using v8::String;
+using v8::Value;
+
+void CreateObject(const FunctionCallbackInfo&lt;Value&gt;&amp; args) {
+  MyObject::NewInstance(args);
+}
+
+void InitAll(Local&lt;Object&gt; exports, Local&lt;Object&gt; module) {
+  MyObject::Init(exports-&gt;GetIsolate());
+
+  NODE_SET_METHOD(module, &quot;exports&quot;, CreateObject);
+}
+
+NODE_MODULE(NODE_GYP_MODULE_NAME, InitAll)
+
+}  // namespace demo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p>在 <code>myobject.h</code> 中，添加了静态方法 <code>NewInstance()</code> 来处理对象的实例化。 这个方法代替了 JavaScript 中的 <code>new</code> ：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// myobject.h
+#ifndef MYOBJECT_H
+#define MYOBJECT_H
+
+#include &lt;node.h&gt;
+#include &lt;node_object_wrap.h&gt;
+
+namespace demo {
+
+class MyObject : public node::ObjectWrap {
+ public:
+  static void Init(v8::Isolate* isolate);
+  static void NewInstance(const v8::FunctionCallbackInfo&lt;v8::Value&gt;&amp; args);
+
+ private:
+  explicit MyObject(double value = 0);
+  ~MyObject();
+
+  static void New(const v8::FunctionCallbackInfo&lt;v8::Value&gt;&amp; args);
+  static void PlusOne(const v8::FunctionCallbackInfo&lt;v8::Value&gt;&amp; args);
+  static v8::Global&lt;v8::Function&gt; constructor;
+  double value_;
+};
+
+}  // namespace demo
+
+#endif
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p><code>myobject.cc</code> 中的实现类似于前面的例子：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// myobject.cc
+#include &lt;node.h&gt;
+#include &quot;myobject.h&quot;
+
+namespace demo {
+
+using node::AddEnvironmentCleanupHook;
+using v8::Context;
+using v8::Function;
+using v8::FunctionCallbackInfo;
+using v8::FunctionTemplate;
+using v8::Global;
+using v8::Isolate;
+using v8::Local;
+using v8::NewStringType;
+using v8::Number;
+using v8::Object;
+using v8::String;
+using v8::Value;
+
+// 警告！这不是线程安全的，
+// 这个插件不能用于工作线程。
+Global&lt;Function&gt; MyObject::constructor;
+
+MyObject::MyObject(double value) : value_(value) {
+}
+
+MyObject::~MyObject() {
+}
+
+void MyObject::Init(Isolate* isolate) {
+  // 准备构造函数模板
+  Local&lt;FunctionTemplate&gt; tpl = FunctionTemplate::New(isolate, New);
+  tpl-&gt;SetClassName(String::NewFromUtf8(
+      isolate, &quot;MyObject&quot;, NewStringType::kNormal).ToLocalChecked());
+  tpl-&gt;InstanceTemplate()-&gt;SetInternalFieldCount(1);
+
+  // 原型
+  NODE_SET_PROTOTYPE_METHOD(tpl, &quot;plusOne&quot;, PlusOne);
+
+  Local&lt;Context&gt; context = isolate-&gt;GetCurrentContext();
+  constructor.Reset(isolate, tpl-&gt;GetFunction(context).ToLocalChecked());
+
+  AddEnvironmentCleanupHook(isolate, [](void*) {
+    constructor.Reset();
+  }, nullptr);
+}
+
+void MyObject::New(const FunctionCallbackInfo&lt;Value&gt;&amp; args) {
+  Isolate* isolate = args.GetIsolate();
+  Local&lt;Context&gt; context = isolate-&gt;GetCurrentContext();
+
+  if (args.IsConstructCall()) {
+    // 作为构造函数调用：`new MyObject(...)`
+    double value = args[0]-&gt;IsUndefined() ?
+        0 : args[0]-&gt;NumberValue(context).FromMaybe(0);
+    MyObject* obj = new MyObject(value);
+    obj-&gt;Wrap(args.This());
+    args.GetReturnValue().Set(args.This());
+  } else {
+    // 作为普通函数 `MyObject(...)` 调用，变成构造调用。
+    const int argc = 1;
+    Local&lt;Value&gt; argv[argc] = { args[0] };
+    Local&lt;Function&gt; cons = Local&lt;Function&gt;::New(isolate, constructor);
+    Local&lt;Object&gt; instance =
+        cons-&gt;NewInstance(context, argc, argv).ToLocalChecked();
+    args.GetReturnValue().Set(instance);
+  }
+}
+
+void MyObject::NewInstance(const FunctionCallbackInfo&lt;Value&gt;&amp; args) {
+  Isolate* isolate = args.GetIsolate();
+
+  const unsigned argc = 1;
+  Local&lt;Value&gt; argv[argc] = { args[0] };
+  Local&lt;Function&gt; cons = Local&lt;Function&gt;::New(isolate, constructor);
+  Local&lt;Context&gt; context = isolate-&gt;GetCurrentContext();
+  Local&lt;Object&gt; instance =
+      cons-&gt;NewInstance(context, argc, argv).ToLocalChecked();
+
+  args.GetReturnValue().Set(instance);
+}
+
+void MyObject::PlusOne(const FunctionCallbackInfo&lt;Value&gt;&amp; args) {
+  Isolate* isolate = args.GetIsolate();
+
+  MyObject* obj = ObjectWrap::Unwrap&lt;MyObject&gt;(args.Holder());
+  obj-&gt;value_ += 1;
+
+  args.GetReturnValue().Set(Number::New(isolate, obj-&gt;value_));
+}
+
+}  // namespace demo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br></div></div><p>再一次，要构建此示例，必须将 <code>myobject.cc</code> 文件添加到 <code>binding.gyp</code>：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;targets&quot;: [
+    {
+      &quot;target_name&quot;: &quot;addon&quot;,
+      &quot;sources&quot;: [
+        &quot;addon.cc&quot;,
+        &quot;myobject.cc&quot;
+      ]
+    }
+  ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>测试它：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// test.js
+const createObject = require('./build/Release/addon');
+
+const obj = createObject(10);
+console.log(obj.plusOne());
+// 打印: 11
+console.log(obj.plusOne());
+// 打印: 12
+console.log(obj.plusOne());
+// 打印: 13
+
+const obj2 = createObject(20);
+console.log(obj2.plusOne());
+// 打印: 21
+console.log(obj2.plusOne());
+// 打印: 22
+console.log(obj2.plusOne());
+// 打印: 23
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h4 id="传递封装的对象"><a href="#传递封装的对象" class="header-anchor">#</a> 传递封装的对象<a href="http://nodejs.cn/api-v12/addons.html#passing-wrapped-objects-around" target="_blank" rel="noopener noreferrer">#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <p><a href="http://nodejs.cn/api-v12/addons/passing_wrapped_objects_around.html" target="_blank" rel="noopener noreferrer">中英对照<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>除了封装和返回 C++ 对象之外，还可以通过使用 Node.js 辅助函数 <code>node::ObjectWrap::Unwrap</code> 将它们解包来传递被包装的对象。 以下示例显示了函数 <code>add()</code>，它可以将两个 <code>MyObject</code> 对象作为输入参数：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// addon.cc
+#include &lt;node.h&gt;
+#include &lt;node_object_wrap.h&gt;
+#include &quot;myobject.h&quot;
+
+namespace demo {
+
+using v8::Context;
+using v8::FunctionCallbackInfo;
+using v8::Isolate;
+using v8::Local;
+using v8::Number;
+using v8::Object;
+using v8::String;
+using v8::Value;
+
+void CreateObject(const FunctionCallbackInfo&lt;Value&gt;&amp; args) {
+  MyObject::NewInstance(args);
+}
+
+void Add(const FunctionCallbackInfo&lt;Value&gt;&amp; args) {
+  Isolate* isolate = args.GetIsolate();
+  Local&lt;Context&gt; context = isolate-&gt;GetCurrentContext();
+
+  MyObject* obj1 = node::ObjectWrap::Unwrap&lt;MyObject&gt;(
+      args[0]-&gt;ToObject(context).ToLocalChecked());
+  MyObject* obj2 = node::ObjectWrap::Unwrap&lt;MyObject&gt;(
+      args[1]-&gt;ToObject(context).ToLocalChecked());
+
+  double sum = obj1-&gt;value() + obj2-&gt;value();
+  args.GetReturnValue().Set(Number::New(isolate, sum));
+}
+
+void InitAll(Local&lt;Object&gt; exports) {
+  MyObject::Init(exports-&gt;GetIsolate());
+
+  NODE_SET_METHOD(exports, &quot;createObject&quot;, CreateObject);
+  NODE_SET_METHOD(exports, &quot;add&quot;, Add);
+}
+
+NODE_MODULE(NODE_GYP_MODULE_NAME, InitAll)
+
+}  // namespace demo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><p>在 <code>myobject.h</code> 中，添加了新的公共方法，以允许在解封装对象后访问私有值。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// myobject.h
+#ifndef MYOBJECT_H
+#define MYOBJECT_H
+
+#include &lt;node.h&gt;
+#include &lt;node_object_wrap.h&gt;
+
+namespace demo {
+
+class MyObject : public node::ObjectWrap {
+ public:
+  static void Init(v8::Isolate* isolate);
+  static void NewInstance(const v8::FunctionCallbackInfo&lt;v8::Value&gt;&amp; args);
+  inline double value() const { return value_; }
+
+ private:
+  explicit MyObject(double value = 0);
+  ~MyObject();
+
+  static void New(const v8::FunctionCallbackInfo&lt;v8::Value&gt;&amp; args);
+  static v8::Global&lt;v8::Function&gt; constructor;
+  double value_;
+};
+
+}  // namespace demo
+
+#endif
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p><code>myobject.cc</code> 的实现与之前类似：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// myobject.cc
+#include &lt;node.h&gt;
+#include &quot;myobject.h&quot;
+
+namespace demo {
+
+using node::AddEnvironmentCleanupHook;
+using v8::Context;
+using v8::Function;
+using v8::FunctionCallbackInfo;
+using v8::FunctionTemplate;
+using v8::Global;
+using v8::Isolate;
+using v8::Local;
+using v8::NewStringType;
+using v8::Object;
+using v8::String;
+using v8::Value;
+
+// 警告！这不是线程安全的，
+// 这个插件不能用于工作线程。
+Global&lt;Function&gt; MyObject::constructor;
+
+MyObject::MyObject(double value) : value_(value) {
+}
+
+MyObject::~MyObject() {
+}
+
+void MyObject::Init(Isolate* isolate) {
+  // 准备构造函数模板
+  Local&lt;FunctionTemplate&gt; tpl = FunctionTemplate::New(isolate, New);
+  tpl-&gt;SetClassName(String::NewFromUtf8(
+      isolate, &quot;MyObject&quot;, NewStringType::kNormal).ToLocalChecked());
+  tpl-&gt;InstanceTemplate()-&gt;SetInternalFieldCount(1);
+
+  Local&lt;Context&gt; context = isolate-&gt;GetCurrentContext();
+  constructor.Reset(isolate, tpl-&gt;GetFunction(context).ToLocalChecked());
+
+  AddEnvironmentCleanupHook(isolate, [](void*) {
+    constructor.Reset();
+  }, nullptr);
+}
+
+void MyObject::New(const FunctionCallbackInfo&lt;Value&gt;&amp; args) {
+  Isolate* isolate = args.GetIsolate();
+  Local&lt;Context&gt; context = isolate-&gt;GetCurrentContext();
+
+  if (args.IsConstructCall()) {
+    // 作为构造函数调用：`new MyObject(...)`
+    double value = args[0]-&gt;IsUndefined() ?
+        0 : args[0]-&gt;NumberValue(context).FromMaybe(0);
+    MyObject* obj = new MyObject(value);
+    obj-&gt;Wrap(args.This());
+    args.GetReturnValue().Set(args.This());
+  } else {
+    // 作为普通函数 `MyObject(...)` 调用，变成构造调用。
+    const int argc = 1;
+    Local&lt;Value&gt; argv[argc] = { args[0] };
+    Local&lt;Function&gt; cons = Local&lt;Function&gt;::New(isolate, constructor);
+    Local&lt;Object&gt; instance =
+        cons-&gt;NewInstance(context, argc, argv).ToLocalChecked();
+    args.GetReturnValue().Set(instance);
+  }
+}
+
+void MyObject::NewInstance(const FunctionCallbackInfo&lt;Value&gt;&amp; args) {
+  Isolate* isolate = args.GetIsolate();
+
+  const unsigned argc = 1;
+  Local&lt;Value&gt; argv[argc] = { args[0] };
+  Local&lt;Function&gt; cons = Local&lt;Function&gt;::New(isolate, constructor);
+  Local&lt;Context&gt; context = isolate-&gt;GetCurrentContext();
+  Local&lt;Object&gt; instance =
+      cons-&gt;NewInstance(context, argc, argv).ToLocalChecked();
+
+  args.GetReturnValue().Set(instance);
+}
+
+}  // namespace demo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br></div></div><p>测试它：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// test.js
+const addon = require('./build/Release/addon');
+
+const obj1 = addon.createObject(10);
+const obj2 = addon.createObject(20);
+const result = addon.add(obj1, obj2);
+
+console.log(result);
+// 打印: 30
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/29/2022, 7:39:19 AM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/langnang/assets/js/app.d31b4f67.js" defer></script><script src="/langnang/assets/js/3.4862c1a5.js" defer></script><script src="/langnang/assets/js/120.3c6dfea3.js" defer></script>
+  </body>
+</html>

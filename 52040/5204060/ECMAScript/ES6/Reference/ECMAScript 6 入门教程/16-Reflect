@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Reflect | Hello Langnang</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Welcome to langnang">
+    
+    <link rel="preload" href="/langnang/assets/css/0.styles.8911c2d2.css" as="style"><link rel="preload" href="/langnang/assets/js/app.d31b4f67.js" as="script"><link rel="preload" href="/langnang/assets/js/3.4862c1a5.js" as="script"><link rel="preload" href="/langnang/assets/js/72.f3f769b7.js" as="script"><link rel="prefetch" href="/langnang/assets/js/10.775593e7.js"><link rel="prefetch" href="/langnang/assets/js/100.3b42a1b3.js"><link rel="prefetch" href="/langnang/assets/js/101.f90544bb.js"><link rel="prefetch" href="/langnang/assets/js/102.5948090a.js"><link rel="prefetch" href="/langnang/assets/js/103.646bae3d.js"><link rel="prefetch" href="/langnang/assets/js/104.388c68f6.js"><link rel="prefetch" href="/langnang/assets/js/105.3dc547ce.js"><link rel="prefetch" href="/langnang/assets/js/106.711f4951.js"><link rel="prefetch" href="/langnang/assets/js/107.8c7375e5.js"><link rel="prefetch" href="/langnang/assets/js/108.06de7dc8.js"><link rel="prefetch" href="/langnang/assets/js/109.5b31d5ad.js"><link rel="prefetch" href="/langnang/assets/js/11.0a5dae33.js"><link rel="prefetch" href="/langnang/assets/js/110.009ec9bb.js"><link rel="prefetch" href="/langnang/assets/js/111.bac229c8.js"><link rel="prefetch" href="/langnang/assets/js/112.c418e9e1.js"><link rel="prefetch" href="/langnang/assets/js/113.24a8ee24.js"><link rel="prefetch" href="/langnang/assets/js/114.8fe6afae.js"><link rel="prefetch" href="/langnang/assets/js/115.d2df2dc5.js"><link rel="prefetch" href="/langnang/assets/js/116.b5ccbd12.js"><link rel="prefetch" href="/langnang/assets/js/117.d172ce1f.js"><link rel="prefetch" href="/langnang/assets/js/118.6db473b1.js"><link rel="prefetch" href="/langnang/assets/js/119.19ec0599.js"><link rel="prefetch" href="/langnang/assets/js/12.0af39c0b.js"><link rel="prefetch" href="/langnang/assets/js/120.3c6dfea3.js"><link rel="prefetch" href="/langnang/assets/js/121.72a9adf6.js"><link rel="prefetch" href="/langnang/assets/js/122.75b8b13f.js"><link rel="prefetch" href="/langnang/assets/js/123.f5011de7.js"><link rel="prefetch" href="/langnang/assets/js/124.7a73b968.js"><link rel="prefetch" href="/langnang/assets/js/125.2fd0f7a8.js"><link rel="prefetch" href="/langnang/assets/js/126.56416ba6.js"><link rel="prefetch" href="/langnang/assets/js/127.ccd25ff4.js"><link rel="prefetch" href="/langnang/assets/js/128.8edc62a9.js"><link rel="prefetch" href="/langnang/assets/js/129.216fd032.js"><link rel="prefetch" href="/langnang/assets/js/13.c03d4d79.js"><link rel="prefetch" href="/langnang/assets/js/130.c57710d0.js"><link rel="prefetch" href="/langnang/assets/js/131.35330210.js"><link rel="prefetch" href="/langnang/assets/js/132.ec0bf031.js"><link rel="prefetch" href="/langnang/assets/js/133.c6a81315.js"><link rel="prefetch" href="/langnang/assets/js/134.9e3141d7.js"><link rel="prefetch" href="/langnang/assets/js/135.111242f1.js"><link rel="prefetch" href="/langnang/assets/js/136.ef67c601.js"><link rel="prefetch" href="/langnang/assets/js/137.bb3e40a9.js"><link rel="prefetch" href="/langnang/assets/js/138.80a1b191.js"><link rel="prefetch" href="/langnang/assets/js/139.608bdbfe.js"><link rel="prefetch" href="/langnang/assets/js/14.050f82cf.js"><link rel="prefetch" href="/langnang/assets/js/140.e736bed7.js"><link rel="prefetch" href="/langnang/assets/js/141.8bb3e423.js"><link rel="prefetch" href="/langnang/assets/js/142.599583d1.js"><link rel="prefetch" href="/langnang/assets/js/143.1b03e7c9.js"><link rel="prefetch" href="/langnang/assets/js/144.d59da5cd.js"><link rel="prefetch" href="/langnang/assets/js/145.69f830c2.js"><link rel="prefetch" href="/langnang/assets/js/146.f1d0d249.js"><link rel="prefetch" href="/langnang/assets/js/147.6ffe2b0a.js"><link rel="prefetch" href="/langnang/assets/js/148.a23cb0f6.js"><link rel="prefetch" href="/langnang/assets/js/149.fc2d720e.js"><link rel="prefetch" href="/langnang/assets/js/15.52373675.js"><link rel="prefetch" href="/langnang/assets/js/150.fde1fdfc.js"><link rel="prefetch" href="/langnang/assets/js/151.ad337b6b.js"><link rel="prefetch" href="/langnang/assets/js/152.c27a6a8b.js"><link rel="prefetch" href="/langnang/assets/js/153.d1df63e4.js"><link rel="prefetch" href="/langnang/assets/js/154.37e8d179.js"><link rel="prefetch" href="/langnang/assets/js/155.20a7bd1e.js"><link rel="prefetch" href="/langnang/assets/js/156.3eb0c337.js"><link rel="prefetch" href="/langnang/assets/js/157.b439abfe.js"><link rel="prefetch" href="/langnang/assets/js/158.e27914da.js"><link rel="prefetch" href="/langnang/assets/js/159.e2c81e4d.js"><link rel="prefetch" href="/langnang/assets/js/16.d39a414a.js"><link rel="prefetch" href="/langnang/assets/js/160.be13652a.js"><link rel="prefetch" href="/langnang/assets/js/161.bb2944ac.js"><link rel="prefetch" href="/langnang/assets/js/162.03f5841b.js"><link rel="prefetch" href="/langnang/assets/js/163.ab0cc579.js"><link rel="prefetch" href="/langnang/assets/js/164.d1c5018d.js"><link rel="prefetch" href="/langnang/assets/js/165.6041bd7d.js"><link rel="prefetch" href="/langnang/assets/js/166.4007cfdb.js"><link rel="prefetch" href="/langnang/assets/js/167.60edd5dc.js"><link rel="prefetch" href="/langnang/assets/js/168.6c3f208e.js"><link rel="prefetch" href="/langnang/assets/js/169.c0440ecf.js"><link rel="prefetch" href="/langnang/assets/js/17.742bbdba.js"><link rel="prefetch" href="/langnang/assets/js/170.a3a5c6fc.js"><link rel="prefetch" href="/langnang/assets/js/171.9da19196.js"><link rel="prefetch" href="/langnang/assets/js/172.81335ae9.js"><link rel="prefetch" href="/langnang/assets/js/173.eff4c653.js"><link rel="prefetch" href="/langnang/assets/js/174.067a131c.js"><link rel="prefetch" href="/langnang/assets/js/175.d9f2d29c.js"><link rel="prefetch" href="/langnang/assets/js/176.9160d186.js"><link rel="prefetch" href="/langnang/assets/js/177.961ca383.js"><link rel="prefetch" href="/langnang/assets/js/178.f6a50663.js"><link rel="prefetch" href="/langnang/assets/js/179.32053b51.js"><link rel="prefetch" href="/langnang/assets/js/18.c296e2e1.js"><link rel="prefetch" href="/langnang/assets/js/180.78baa277.js"><link rel="prefetch" href="/langnang/assets/js/181.fd6da4b7.js"><link rel="prefetch" href="/langnang/assets/js/182.409f2a7a.js"><link rel="prefetch" href="/langnang/assets/js/183.5a920d84.js"><link rel="prefetch" href="/langnang/assets/js/184.105cf2a5.js"><link rel="prefetch" href="/langnang/assets/js/185.a58308b2.js"><link rel="prefetch" href="/langnang/assets/js/186.0e5bd82d.js"><link rel="prefetch" href="/langnang/assets/js/187.4fa04382.js"><link rel="prefetch" href="/langnang/assets/js/188.97d376e0.js"><link rel="prefetch" href="/langnang/assets/js/189.80b00f18.js"><link rel="prefetch" href="/langnang/assets/js/19.1c5a6ebf.js"><link rel="prefetch" href="/langnang/assets/js/190.69690b18.js"><link rel="prefetch" href="/langnang/assets/js/191.0e3e1b72.js"><link rel="prefetch" href="/langnang/assets/js/192.9bd72dc2.js"><link rel="prefetch" href="/langnang/assets/js/193.56adf4dc.js"><link rel="prefetch" href="/langnang/assets/js/194.93bc1c26.js"><link rel="prefetch" href="/langnang/assets/js/195.b22b4646.js"><link rel="prefetch" href="/langnang/assets/js/196.7ab4c9c4.js"><link rel="prefetch" href="/langnang/assets/js/20.cb8b7c79.js"><link rel="prefetch" href="/langnang/assets/js/21.fa864efa.js"><link rel="prefetch" href="/langnang/assets/js/22.f9b2bb9e.js"><link rel="prefetch" href="/langnang/assets/js/23.f1d633b3.js"><link rel="prefetch" href="/langnang/assets/js/24.d48086ba.js"><link rel="prefetch" href="/langnang/assets/js/25.fae94c8a.js"><link rel="prefetch" href="/langnang/assets/js/26.0a794c38.js"><link rel="prefetch" href="/langnang/assets/js/27.3ab27b41.js"><link rel="prefetch" href="/langnang/assets/js/28.04cb9534.js"><link rel="prefetch" href="/langnang/assets/js/29.e736eb74.js"><link rel="prefetch" href="/langnang/assets/js/30.21343d23.js"><link rel="prefetch" href="/langnang/assets/js/31.46d8bc29.js"><link rel="prefetch" href="/langnang/assets/js/32.adbfd3d7.js"><link rel="prefetch" href="/langnang/assets/js/33.a652cb4a.js"><link rel="prefetch" href="/langnang/assets/js/34.a7cbf3be.js"><link rel="prefetch" href="/langnang/assets/js/35.682fcd4d.js"><link rel="prefetch" href="/langnang/assets/js/36.cf77b46c.js"><link rel="prefetch" href="/langnang/assets/js/37.72bb2cea.js"><link rel="prefetch" href="/langnang/assets/js/38.1f71af35.js"><link rel="prefetch" href="/langnang/assets/js/39.44ae3ca7.js"><link rel="prefetch" href="/langnang/assets/js/4.0015768f.js"><link rel="prefetch" href="/langnang/assets/js/40.d5c32fc6.js"><link rel="prefetch" href="/langnang/assets/js/41.b76618fa.js"><link rel="prefetch" href="/langnang/assets/js/42.f86242dc.js"><link rel="prefetch" href="/langnang/assets/js/43.762e6005.js"><link rel="prefetch" href="/langnang/assets/js/44.1d3f1771.js"><link rel="prefetch" href="/langnang/assets/js/45.0489851f.js"><link rel="prefetch" href="/langnang/assets/js/46.111d0911.js"><link rel="prefetch" href="/langnang/assets/js/47.089ce059.js"><link rel="prefetch" href="/langnang/assets/js/48.797a6840.js"><link rel="prefetch" href="/langnang/assets/js/49.bcf6b30e.js"><link rel="prefetch" href="/langnang/assets/js/5.a912fbe1.js"><link rel="prefetch" href="/langnang/assets/js/50.ec9ff8bb.js"><link rel="prefetch" href="/langnang/assets/js/51.da32bd2c.js"><link rel="prefetch" href="/langnang/assets/js/52.9ac7037d.js"><link rel="prefetch" href="/langnang/assets/js/53.913a149f.js"><link rel="prefetch" href="/langnang/assets/js/54.a39f0290.js"><link rel="prefetch" href="/langnang/assets/js/55.ce2fd45a.js"><link rel="prefetch" href="/langnang/assets/js/56.f95f2056.js"><link rel="prefetch" href="/langnang/assets/js/57.9641f8db.js"><link rel="prefetch" href="/langnang/assets/js/58.9e0bd9f9.js"><link rel="prefetch" href="/langnang/assets/js/59.ff799c4d.js"><link rel="prefetch" href="/langnang/assets/js/6.a83dfbde.js"><link rel="prefetch" href="/langnang/assets/js/60.e148b970.js"><link rel="prefetch" href="/langnang/assets/js/61.297c39ea.js"><link rel="prefetch" href="/langnang/assets/js/62.3f65914a.js"><link rel="prefetch" href="/langnang/assets/js/63.820344bb.js"><link rel="prefetch" href="/langnang/assets/js/64.e6d80ada.js"><link rel="prefetch" href="/langnang/assets/js/65.6645abf1.js"><link rel="prefetch" href="/langnang/assets/js/66.83b70802.js"><link rel="prefetch" href="/langnang/assets/js/67.c7861816.js"><link rel="prefetch" href="/langnang/assets/js/68.7bd18b26.js"><link rel="prefetch" href="/langnang/assets/js/69.51bc914a.js"><link rel="prefetch" href="/langnang/assets/js/7.c49c916e.js"><link rel="prefetch" href="/langnang/assets/js/70.adb07203.js"><link rel="prefetch" href="/langnang/assets/js/71.166ddd79.js"><link rel="prefetch" href="/langnang/assets/js/73.a2cebf9d.js"><link rel="prefetch" href="/langnang/assets/js/74.31312659.js"><link rel="prefetch" href="/langnang/assets/js/75.c8eaec5f.js"><link rel="prefetch" href="/langnang/assets/js/76.9dcdecdd.js"><link rel="prefetch" href="/langnang/assets/js/77.7c23270e.js"><link rel="prefetch" href="/langnang/assets/js/78.f3e0ecf5.js"><link rel="prefetch" href="/langnang/assets/js/79.2179f40d.js"><link rel="prefetch" href="/langnang/assets/js/8.63d120fa.js"><link rel="prefetch" href="/langnang/assets/js/80.89a31bb9.js"><link rel="prefetch" href="/langnang/assets/js/81.f95bb1af.js"><link rel="prefetch" href="/langnang/assets/js/82.cab0e3cc.js"><link rel="prefetch" href="/langnang/assets/js/83.c8ba333b.js"><link rel="prefetch" href="/langnang/assets/js/84.46b333b4.js"><link rel="prefetch" href="/langnang/assets/js/85.e8942270.js"><link rel="prefetch" href="/langnang/assets/js/86.f4fba564.js"><link rel="prefetch" href="/langnang/assets/js/87.7f45a780.js"><link rel="prefetch" href="/langnang/assets/js/88.9fc00189.js"><link rel="prefetch" href="/langnang/assets/js/89.e4e6e356.js"><link rel="prefetch" href="/langnang/assets/js/9.17377351.js"><link rel="prefetch" href="/langnang/assets/js/90.2a30069d.js"><link rel="prefetch" href="/langnang/assets/js/91.d1fffc51.js"><link rel="prefetch" href="/langnang/assets/js/92.6d054837.js"><link rel="prefetch" href="/langnang/assets/js/93.6a2aeb2d.js"><link rel="prefetch" href="/langnang/assets/js/94.dfcb77e8.js"><link rel="prefetch" href="/langnang/assets/js/95.4e7702b3.js"><link rel="prefetch" href="/langnang/assets/js/96.5174433b.js"><link rel="prefetch" href="/langnang/assets/js/97.1afd331d.js"><link rel="prefetch" href="/langnang/assets/js/98.2888b244.js"><link rel="prefetch" href="/langnang/assets/js/99.1b857e0e.js"><link rel="prefetch" href="/langnang/assets/js/vendors~flowchart.d11844ea.js">
+    <link rel="stylesheet" href="/langnang/assets/css/0.styles.8911c2d2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/langnang/" class="home-link router-link-active"><!----> <span class="site-name">Hello Langnang</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/langnang/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/langnang/Interview/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/langnang/toolkit/" class="nav-link">
+  软件工具&amp;服务
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机科学技术" class="dropdown-title"><span class="title">计算机科学技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机科学技术" class="mobile-dropdown-title"><span class="title">计算机科学技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          计算机科学技术基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/langnang/52010/5201040/" class="nav-link">
+  算法理论
+</a></li><li class="dropdown-subitem"><a href="/langnang/52010/5201050/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-subitem"><a href="/langnang/52010/5201060/" class="nav-link">
+  数据安全与计算机安全
+</a></li></ul></li><li class="dropdown-item"><h4>
+          计算机软件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/langnang/52040/5204010/" class="nav-link">
+  软件理论
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204020/" class="nav-link">
+  操作系统与操作环境
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204030/" class="nav-link">
+  程序设计及其语言
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204050/" class="nav-link">
+  数据库
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204060/HTML/" class="nav-link">
+  软件开发环境与开发技术
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204070/" class="nav-link">
+  软件工程
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/langnang/langnang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Langnang" class="dropdown-title"><span class="title">Langnang</span> <span class="arrow down"></span></button> <button type="button" aria-label="Langnang" class="mobile-dropdown-title"><span class="title">Langnang</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://langnang.github.io/langnang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Langnang
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://langnang-temp.github.io/langnang-temp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Templates
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://langnang-package.github.io/langnang-package" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Packages
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/langnang/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/langnang/Interview/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/langnang/toolkit/" class="nav-link">
+  软件工具&amp;服务
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机科学技术" class="dropdown-title"><span class="title">计算机科学技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机科学技术" class="mobile-dropdown-title"><span class="title">计算机科学技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          计算机科学技术基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/langnang/52010/5201040/" class="nav-link">
+  算法理论
+</a></li><li class="dropdown-subitem"><a href="/langnang/52010/5201050/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-subitem"><a href="/langnang/52010/5201060/" class="nav-link">
+  数据安全与计算机安全
+</a></li></ul></li><li class="dropdown-item"><h4>
+          计算机软件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/langnang/52040/5204010/" class="nav-link">
+  软件理论
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204020/" class="nav-link">
+  操作系统与操作环境
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204030/" class="nav-link">
+  程序设计及其语言
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204050/" class="nav-link">
+  数据库
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204060/HTML/" class="nav-link">
+  软件开发环境与开发技术
+</a></li><li class="dropdown-subitem"><a href="/langnang/52040/5204070/" class="nav-link">
+  软件工程
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/langnang/langnang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Langnang" class="dropdown-title"><span class="title">Langnang</span> <span class="arrow down"></span></button> <button type="button" aria-label="Langnang" class="mobile-dropdown-title"><span class="title">Langnang</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://langnang.github.io/langnang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Langnang
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://langnang-temp.github.io/langnang-temp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Templates
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://langnang-package.github.io/langnang-package" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Packages
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/langnang/52040/5204010/" class="sidebar-link">软件理论</a></li><li><a href="/langnang/52040/5204020/" class="sidebar-link">操作系统与操作环境</a></li><li><a href="/langnang/52040/5204030/" class="sidebar-link">程序设计及其语言</a></li><li><a href="/langnang/52040/5204050/" class="sidebar-link">数据库</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>软件开发环境与开发技术</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/langnang/52040/5204060/HTML/" class="sidebar-link">HTML</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/langnang/52040/5204060/CSS/" class="sidebar-heading clickable"><span>CSS</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/langnang/52040/5204060/JavaScript/" class="sidebar-heading clickable"><span>JavaScript</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/langnang/52040/5204060/ECMAScript/ES6/" class="sidebar-heading clickable router-link-active open"><span>ES2015/ES6</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-2"><p class="sidebar-heading"><span>面试题</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-2"><p class="sidebar-heading open"><span>参考手册</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-3"><p class="sidebar-heading open"><span>ECMAScript 6 入门教程</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/01-ECMAScript 6 简介.html" class="sidebar-link">ECMAScript 6 简介</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/02-let 和 const 命令.html" class="sidebar-link">let 和 const 命令</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/03-变量的解构赋值.html" class="sidebar-link">变量的解构赋值</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/04-字符串的扩展.html" class="sidebar-link">字符串的扩展</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/05-字符串的新增方法.html" class="sidebar-link">字符串的新增方法</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/06-正则的扩展.html" class="sidebar-link">正则的扩展</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/07-数值的扩展.html" class="sidebar-link">数值的扩展</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/08-函数的扩展.html" class="sidebar-link">函数的扩展</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/09-数组的扩展.html" class="sidebar-link">数组的扩展</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/10-对象的扩展.html" class="sidebar-link">对象的扩展</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/11-对象的新增方法.html" class="sidebar-link">对象的新增方法</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/12-运算符的扩展.html" class="sidebar-link">运算符的扩展</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/13-Symbol.html" class="sidebar-link">Symbol</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/14-Set 和 Map 数据结构.html" class="sidebar-link">Set 和 Map 数据结构</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/15-Proxy.html" class="sidebar-link">Set 和 Map 数据结构</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/16-Reflect.html" class="active sidebar-link">Reflect</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/16-Reflect.html#概述" class="sidebar-link">概述</a></li><li class="sidebar-sub-header"><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/16-Reflect.html#静态方法" class="sidebar-link">静态方法</a></li><li class="sidebar-sub-header"><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/16-Reflect.html#实例-使用-proxy-实现观察者模式" class="sidebar-link">实例：使用 Proxy 实现观察者模式</a></li></ul></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/17-Promise 对象.html" class="sidebar-link">Promise 对象</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/18-Iterator 和 for...of 循环.html" class="sidebar-link">Iterator 和 for...of 循环</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/19-Generator 函数的语法.html" class="sidebar-link">Generator 函数的语法</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/20-Generator 函数的异步应用.html" class="sidebar-link">Generator 函数的异步应用</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/21-async 函数.html" class="sidebar-link">async 函数</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/22-Class 的基本语法.html" class="sidebar-link">Class 的基本语法</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/23-Class 的继承.html" class="sidebar-link">Class 的继承</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/24-Module 的语法.html" class="sidebar-link">Class 的继承</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/25-Module 的加载实现.html" class="sidebar-link">Module 的加载实现</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/26-编程风格.html" class="sidebar-link">编程风格</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/27-读懂 ECMAScript 规格.html" class="sidebar-link">读懂 ECMAScript 规格</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/28-异步遍历器.html" class="sidebar-link">异步遍历器</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/29-ArrayBuffer.html" class="sidebar-link">ArrayBuffer</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/30-最新提案.html" class="sidebar-link">最新提案</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/31-装饰器.html" class="sidebar-link">装饰器</a></li><li><a href="/langnang/52040/5204060/ECMAScript/ES6/Reference/ECMAScript 6 入门教程/32-参考链接.html" class="sidebar-link">参考链接</a></li></ul></section></li></ul></section></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/langnang/52040/5204060/NodeJs/" class="sidebar-heading clickable"><span>NodeJs</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/langnang/52040/5204060/React/" class="sidebar-link">React</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/langnang/52040/5204060/Vue/" class="sidebar-heading clickable"><span>Vue</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/langnang/52040/5204060/TypeScript/" class="sidebar-link">TypeScript</a></li><li><a href="/langnang/52040/5204060/WeChat/" class="sidebar-link">小程序</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>NPM Packages</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><a href="/langnang/52040/5204070/" class="sidebar-link">软件工程</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="reflect"><a href="#reflect" class="header-anchor">#</a> Reflect</h1> <ol><li><a href="https://es6.ruanyifeng.com/#docs/reflect#%E6%A6%82%E8%BF%B0" target="_blank" rel="noopener noreferrer">概述<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://es6.ruanyifeng.com/#docs/reflect#%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95" target="_blank" rel="noopener noreferrer">静态方法<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://es6.ruanyifeng.com/#docs/reflect#%E5%AE%9E%E4%BE%8B%EF%BC%9A%E4%BD%BF%E7%94%A8%20Proxy%20%E5%AE%9E%E7%8E%B0%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F" target="_blank" rel="noopener noreferrer">实例：使用 Proxy 实现观察者模式<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ol> <h2 id="概述"><a href="#概述" class="header-anchor">#</a> 概述</h2> <p><code>Reflect</code>对象与<code>Proxy</code>对象一样，也是 ES6 为了操作对象而提供的新 API。<code>Reflect</code>对象的设计目的有这样几个。</p> <p>（1） 将<code>Object</code>对象的一些明显属于语言内部的方法（比如<code>Object.defineProperty</code>），放到<code>Reflect</code>对象上。现阶段，某些方法同时在<code>Object</code>和<code>Reflect</code>对象上部署，未来的新方法将只部署在<code>Reflect</code>对象上。也就是说，从<code>Reflect</code>对象上可以拿到语言内部的方法。</p> <p>（2） 修改某些<code>Object</code>方法的返回结果，让其变得更合理。比如，<code>Object.defineProperty(obj, name, desc)</code>在无法定义属性时，会抛出一个错误，而<code>Reflect.defineProperty(obj, name, desc)</code>则会返回<code>false</code>。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 老写法
+try {
+  Object.defineProperty(target, property, attributes);
+  // success
+} catch (e) {
+  // failure
+}
+
+// 新写法
+if (Reflect.defineProperty(target, property, attributes)) {
+  // success
+} else {
+  // failure
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>（3） 让<code>Object</code>操作都变成函数行为。某些<code>Object</code>操作是命令式，比如<code>name in obj</code>和<code>delete obj[name]</code>，而<code>Reflect.has(obj, name)</code>和<code>Reflect.deleteProperty(obj, name)</code>让它们变成了函数行为。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 老写法
+'assign' in Object // true
+
+// 新写法
+Reflect.has(Object, 'assign') // true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>（4）<code>Reflect</code>对象的方法与<code>Proxy</code>对象的方法一一对应，只要是<code>Proxy</code>对象的方法，就能在<code>Reflect</code>对象上找到对应的方法。这就让<code>Proxy</code>对象可以方便地调用对应的<code>Reflect</code>方法，完成默认行为，作为修改行为的基础。也就是说，不管<code>Proxy</code>怎么修改默认行为，你总可以在<code>Reflect</code>上获取默认行为。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Proxy(target, {
+  set: function(target, name, value, receiver) {
+    var success = Reflect.set(target, name, value, receiver);
+    if (success) {
+      console.log('property ' + name + ' on ' + target + ' set to ' + value);
+    }
+    return success;
+  }
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>上面代码中，<code>Proxy</code>方法拦截<code>target</code>对象的属性赋值行为。它采用<code>Reflect.set</code>方法将值赋值给对象的属性，确保完成原有的行为，然后再部署额外的功能。</p> <p>下面是另一个例子。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var loggedObj = new Proxy(obj, {
+  get(target, name) {
+    console.log('get', target, name);
+    return Reflect.get(target, name);
+  },
+  deleteProperty(target, name) {
+    console.log('delete' + name);
+    return Reflect.deleteProperty(target, name);
+  },
+  has(target, name) {
+    console.log('has' + name);
+    return Reflect.has(target, name);
+  }
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>上面代码中，每一个<code>Proxy</code>对象的拦截操作（<code>get</code>、<code>delete</code>、<code>has</code>），内部都调用对应的<code>Reflect</code>方法，保证原生行为能够正常执行。添加的工作，就是将每一个操作输出一行日志。</p> <p>有了<code>Reflect</code>对象以后，很多操作会更易读。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 老写法
+Function.prototype.apply.call(Math.floor, undefined, [1.75]) // 1
+
+// 新写法
+Reflect.apply(Math.floor, undefined, [1.75]) // 1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="静态方法"><a href="#静态方法" class="header-anchor">#</a> 静态方法</h2> <p><code>Reflect</code>对象一共有 13 个静态方法。</p> <ul><li>Reflect.apply(target, thisArg, args)</li> <li>Reflect.construct(target, args)</li> <li>Reflect.get(target, name, receiver)</li> <li>Reflect.set(target, name, value, receiver)</li> <li>Reflect.defineProperty(target, name, desc)</li> <li>Reflect.deleteProperty(target, name)</li> <li>Reflect.has(target, name)</li> <li>Reflect.ownKeys(target)</li> <li>Reflect.isExtensible(target)</li> <li>Reflect.preventExtensions(target)</li> <li>Reflect.getOwnPropertyDescriptor(target, name)</li> <li>Reflect.getPrototypeOf(target)</li> <li>Reflect.setPrototypeOf(target, prototype)</li></ul> <p>上面这些方法的作用，大部分与<code>Object</code>对象的同名方法的作用都是相同的，而且它与<code>Proxy</code>对象的方法是一一对应的。下面是对它们的解释。</p> <h3 id="reflect-get-target-name-receiver"><a href="#reflect-get-target-name-receiver" class="header-anchor">#</a> Reflect.get(target, name, receiver)</h3> <p><code>Reflect.get</code>方法查找并返回<code>target</code>对象的<code>name</code>属性，如果没有该属性，则返回<code>undefined</code>。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var myObject = {
+  foo: 1,
+  bar: 2,
+  get baz() {
+    return this.foo + this.bar;
+  },
+}
+
+Reflect.get(myObject, 'foo') // 1
+Reflect.get(myObject, 'bar') // 2
+Reflect.get(myObject, 'baz') // 3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>如果<code>name</code>属性部署了读取函数（getter），则读取函数的<code>this</code>绑定<code>receiver</code>。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var myObject = {
+  foo: 1,
+  bar: 2,
+  get baz() {
+    return this.foo + this.bar;
+  },
+};
+
+var myReceiverObject = {
+  foo: 4,
+  bar: 4,
+};
+
+Reflect.get(myObject, 'baz', myReceiverObject) // 8
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>如果第一个参数不是对象，<code>Reflect.get</code>方法会报错。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Reflect.get(1, 'foo') // 报错
+Reflect.get(false, 'foo') // 报错
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="reflect-set-target-name-value-receiver"><a href="#reflect-set-target-name-value-receiver" class="header-anchor">#</a> Reflect.set(target, name, value, receiver)</h3> <p><code>Reflect.set</code>方法设置<code>target</code>对象的<code>name</code>属性等于<code>value</code>。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var myObject = {
+  foo: 1,
+  set bar(value) {
+    return this.foo = value;
+  },
+}
+
+myObject.foo // 1
+
+Reflect.set(myObject, 'foo', 2);
+myObject.foo // 2
+
+Reflect.set(myObject, 'bar', 3)
+myObject.foo // 3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>如果<code>name</code>属性设置了赋值函数，则赋值函数的<code>this</code>绑定<code>receiver</code>。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var myObject = {
+  foo: 4,
+  set bar(value) {
+    return this.foo = value;
+  },
+};
+
+var myReceiverObject = {
+  foo: 0,
+};
+
+Reflect.set(myObject, 'bar', 1, myReceiverObject);
+myObject.foo // 4
+myReceiverObject.foo // 1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>注意，如果 <code>Proxy</code>对象和 <code>Reflect</code>对象联合使用，前者拦截赋值操作，后者完成赋值的默认行为，而且传入了<code>receiver</code>，那么<code>Reflect.set</code>会触发<code>Proxy.defineProperty</code>拦截。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let p = {
+  a: 'a'
+};
+
+let handler = {
+  set(target, key, value, receiver) {
+    console.log('set');
+    Reflect.set(target, key, value, receiver)
+  },
+  defineProperty(target, key, attribute) {
+    console.log('defineProperty');
+    Reflect.defineProperty(target, key, attribute);
+  }
+};
+
+let obj = new Proxy(p, handler);
+obj.a = 'A';
+// set
+// defineProperty
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p>上面代码中，<code>Proxy.set</code>拦截里面使用了<code>Reflect.set</code>，而且传入了<code>receiver</code>，导致触发<code>Proxy.defineProperty</code>拦截。这是因为<code>Proxy.set</code>的<code>receiver</code>参数总是指向当前的 <code>Proxy</code>实例（即上例的<code>obj</code>），而<code>Reflect.set</code>一旦传入<code>receiver</code>，就会将属性赋值到<code>receiver</code>上面（即<code>obj</code>），导致触发<code>defineProperty</code>拦截。如果<code>Reflect.set</code>没有传入<code>receiver</code>，那么就不会触发<code>defineProperty</code>拦截。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let p = {
+  a: 'a'
+};
+
+let handler = {
+  set(target, key, value, receiver) {
+    console.log('set');
+    Reflect.set(target, key, value)
+  },
+  defineProperty(target, key, attribute) {
+    console.log('defineProperty');
+    Reflect.defineProperty(target, key, attribute);
+  }
+};
+
+let obj = new Proxy(p, handler);
+obj.a = 'A';
+// set
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>如果第一个参数不是对象，<code>Reflect.set</code>会报错。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Reflect.set(1, 'foo', {}) // 报错
+Reflect.set(false, 'foo', {}) // 报错
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="reflect-has-obj-name"><a href="#reflect-has-obj-name" class="header-anchor">#</a> Reflect.has(obj, name)</h3> <p><code>Reflect.has</code>方法对应<code>name in obj</code>里面的<code>in</code>运算符。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var myObject = {
+  foo: 1,
+};
+
+// 旧写法
+'foo' in myObject // true
+
+// 新写法
+Reflect.has(myObject, 'foo') // true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>如果<code>Reflect.has()</code>方法的第一个参数不是对象，会报错。</p> <h3 id="reflect-deleteproperty-obj-name"><a href="#reflect-deleteproperty-obj-name" class="header-anchor">#</a> Reflect.deleteProperty(obj, name)</h3> <p><code>Reflect.deleteProperty</code>方法等同于<code>delete obj[name]</code>，用于删除对象的属性。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const myObj = { foo: 'bar' };
+
+// 旧写法
+delete myObj.foo;
+
+// 新写法
+Reflect.deleteProperty(myObj, 'foo');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>该方法返回一个布尔值。如果删除成功，或者被删除的属性不存在，返回<code>true</code>；删除失败，被删除的属性依然存在，返回<code>false</code>。</p> <p>如果<code>Reflect.deleteProperty()</code>方法的第一个参数不是对象，会报错。</p> <h3 id="reflect-construct-target-args"><a href="#reflect-construct-target-args" class="header-anchor">#</a> Reflect.construct(target, args)</h3> <p><code>Reflect.construct</code>方法等同于<code>new target(...args)</code>，这提供了一种不使用<code>new</code>，来调用构造函数的方法。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function Greeting(name) {
+  this.name = name;
+}
+
+// new 的写法
+const instance = new Greeting('张三');
+
+// Reflect.construct 的写法
+const instance = Reflect.construct(Greeting, ['张三']);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>如果<code>Reflect.construct()</code>方法的第一个参数不是函数，会报错。</p> <h3 id="reflect-getprototypeof-obj"><a href="#reflect-getprototypeof-obj" class="header-anchor">#</a> Reflect.getPrototypeOf(obj)</h3> <p><code>Reflect.getPrototypeOf</code>方法用于读取对象的<code>__proto__</code>属性，对应<code>Object.getPrototypeOf(obj)</code>。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const myObj = new FancyThing();
+
+// 旧写法
+Object.getPrototypeOf(myObj) === FancyThing.prototype;
+
+// 新写法
+Reflect.getPrototypeOf(myObj) === FancyThing.prototype;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><code>Reflect.getPrototypeOf</code>和<code>Object.getPrototypeOf</code>的一个区别是，如果参数不是对象，<code>Object.getPrototypeOf</code>会将这个参数转为对象，然后再运行，而<code>Reflect.getPrototypeOf</code>会报错。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Object.getPrototypeOf(1) // Number {[[PrimitiveValue]]: 0}
+Reflect.getPrototypeOf(1) // 报错
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="reflect-setprototypeof-obj-newproto"><a href="#reflect-setprototypeof-obj-newproto" class="header-anchor">#</a> Reflect.setPrototypeOf(obj, newProto)</h3> <p><code>Reflect.setPrototypeOf</code>方法用于设置目标对象的原型（prototype），对应<code>Object.setPrototypeOf(obj, newProto)</code>方法。它返回一个布尔值，表示是否设置成功。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const myObj = {};
+
+// 旧写法
+Object.setPrototypeOf(myObj, Array.prototype);
+
+// 新写法
+Reflect.setPrototypeOf(myObj, Array.prototype);
+
+myObj.length // 0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>如果无法设置目标对象的原型（比如，目标对象禁止扩展），<code>Reflect.setPrototypeOf</code>方法返回<code>false</code>。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Reflect.setPrototypeOf({}, null)
+// true
+Reflect.setPrototypeOf(Object.freeze({}), null)
+// false
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>如果第一个参数不是对象，<code>Object.setPrototypeOf</code>会返回第一个参数本身，而<code>Reflect.setPrototypeOf</code>会报错。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Object.setPrototypeOf(1, {})
+// 1
+
+Reflect.setPrototypeOf(1, {})
+// TypeError: Reflect.setPrototypeOf called on non-object
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>如果第一个参数是<code>undefined</code>或<code>null</code>，<code>Object.setPrototypeOf</code>和<code>Reflect.setPrototypeOf</code>都会报错。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Object.setPrototypeOf(null, {})
+// TypeError: Object.setPrototypeOf called on null or undefined
+
+Reflect.setPrototypeOf(null, {})
+// TypeError: Reflect.setPrototypeOf called on non-object
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="reflect-apply-func-thisarg-args"><a href="#reflect-apply-func-thisarg-args" class="header-anchor">#</a> Reflect.apply(func, thisArg, args)</h3> <p><code>Reflect.apply</code>方法等同于<code>Function.prototype.apply.call(func, thisArg, args)</code>，用于绑定<code>this</code>对象后执行给定函数。</p> <p>一般来说，如果要绑定一个函数的<code>this</code>对象，可以这样写<code>fn.apply(obj, args)</code>，但是如果函数定义了自己的<code>apply</code>方法，就只能写成<code>Function.prototype.apply.call(fn, obj, args)</code>，采用<code>Reflect</code>对象可以简化这种操作。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const ages = [11, 33, 12, 54, 18, 96];
+
+// 旧写法
+const youngest = Math.min.apply(Math, ages);
+const oldest = Math.max.apply(Math, ages);
+const type = Object.prototype.toString.call(youngest);
+
+// 新写法
+const youngest = Reflect.apply(Math.min, Math, ages);
+const oldest = Reflect.apply(Math.max, Math, ages);
+const type = Reflect.apply(Object.prototype.toString, youngest, []);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="reflect-defineproperty-target-propertykey-attributes"><a href="#reflect-defineproperty-target-propertykey-attributes" class="header-anchor">#</a> Reflect.defineProperty(target, propertyKey, attributes)</h3> <p><code>Reflect.defineProperty</code>方法基本等同于<code>Object.defineProperty</code>，用来为对象定义属性。未来，后者会被逐渐废除，请从现在开始就使用<code>Reflect.defineProperty</code>代替它。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function MyDate() {
+  /*…*/
+}
+
+// 旧写法
+Object.defineProperty(MyDate, 'now', {
+  value: () =&gt; Date.now()
+});
+
+// 新写法
+Reflect.defineProperty(MyDate, 'now', {
+  value: () =&gt; Date.now()
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>如果<code>Reflect.defineProperty</code>的第一个参数不是对象，就会抛出错误，比如<code>Reflect.defineProperty(1, 'foo')</code>。</p> <p>这个方法可以与<code>Proxy.defineProperty</code>配合使用。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const p = new Proxy({}, {
+  defineProperty(target, prop, descriptor) {
+    console.log(descriptor);
+    return Reflect.defineProperty(target, prop, descriptor);
+  }
+});
+
+p.foo = 'bar';
+// {value: &quot;bar&quot;, writable: true, enumerable: true, configurable: true}
+
+p.foo // &quot;bar&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>上面代码中，<code>Proxy.defineProperty</code>对属性赋值设置了拦截，然后使用<code>Reflect.defineProperty</code>完成了赋值。</p> <h3 id="reflect-getownpropertydescriptor-target-propertykey"><a href="#reflect-getownpropertydescriptor-target-propertykey" class="header-anchor">#</a> Reflect.getOwnPropertyDescriptor(target, propertyKey)</h3> <p><code>Reflect.getOwnPropertyDescriptor</code>基本等同于<code>Object.getOwnPropertyDescriptor</code>，用于得到指定属性的描述对象，将来会替代掉后者。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var myObject = {};
+Object.defineProperty(myObject, 'hidden', {
+  value: true,
+  enumerable: false,
+});
+
+// 旧写法
+var theDescriptor = Object.getOwnPropertyDescriptor(myObject, 'hidden');
+
+// 新写法
+var theDescriptor = Reflect.getOwnPropertyDescriptor(myObject, 'hidden');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><code>Reflect.getOwnPropertyDescriptor</code>和<code>Object.getOwnPropertyDescriptor</code>的一个区别是，如果第一个参数不是对象，<code>Object.getOwnPropertyDescriptor(1, 'foo')</code>不报错，返回<code>undefined</code>，而<code>Reflect.getOwnPropertyDescriptor(1, 'foo')</code>会抛出错误，表示参数非法。</p> <h3 id="reflect-isextensible-target"><a href="#reflect-isextensible-target" class="header-anchor">#</a> Reflect.isExtensible (target)</h3> <p><code>Reflect.isExtensible</code>方法对应<code>Object.isExtensible</code>，返回一个布尔值，表示当前对象是否可扩展。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const myObject = {};
+
+// 旧写法
+Object.isExtensible(myObject) // true
+
+// 新写法
+Reflect.isExtensible(myObject) // true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>如果参数不是对象，<code>Object.isExtensible</code>会返回<code>false</code>，因为非对象本来就是不可扩展的，而<code>Reflect.isExtensible</code>会报错。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Object.isExtensible(1) // false
+Reflect.isExtensible(1) // 报错
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="reflect-preventextensions-target"><a href="#reflect-preventextensions-target" class="header-anchor">#</a> Reflect.preventExtensions(target)</h3> <p><code>Reflect.preventExtensions</code>对应<code>Object.preventExtensions</code>方法，用于让一个对象变为不可扩展。它返回一个布尔值，表示是否操作成功。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var myObject = {};
+
+// 旧写法
+Object.preventExtensions(myObject) // Object {}
+
+// 新写法
+Reflect.preventExtensions(myObject) // true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>如果参数不是对象，<code>Object.preventExtensions</code>在 ES5 环境报错，在 ES6 环境返回传入的参数，而<code>Reflect.preventExtensions</code>会报错。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// ES5 环境
+Object.preventExtensions(1) // 报错
+
+// ES6 环境
+Object.preventExtensions(1) // 1
+
+// 新写法
+Reflect.preventExtensions(1) // 报错
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="reflect-ownkeys-target"><a href="#reflect-ownkeys-target" class="header-anchor">#</a> Reflect.ownKeys (target)</h3> <p><code>Reflect.ownKeys</code>方法用于返回对象的所有属性，基本等同于<code>Object.getOwnPropertyNames</code>与<code>Object.getOwnPropertySymbols</code>之和。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var myObject = {
+  foo: 1,
+  bar: 2,
+  [Symbol.for('baz')]: 3,
+  [Symbol.for('bing')]: 4,
+};
+
+// 旧写法
+Object.getOwnPropertyNames(myObject)
+// ['foo', 'bar']
+
+Object.getOwnPropertySymbols(myObject)
+//[Symbol(baz), Symbol(bing)]
+
+// 新写法
+Reflect.ownKeys(myObject)
+// ['foo', 'bar', Symbol(baz), Symbol(bing)]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>如果<code>Reflect.ownKeys()</code>方法的第一个参数不是对象，会报错。</p> <h2 id="实例-使用-proxy-实现观察者模式"><a href="#实例-使用-proxy-实现观察者模式" class="header-anchor">#</a> 实例：使用 Proxy 实现观察者模式</h2> <p>观察者模式（Observer mode）指的是函数自动观察数据对象，一旦对象有变化，函数就会自动执行。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const person = observable({
+  name: '张三',
+  age: 20
+});
+
+function print() {
+  console.log(`${person.name}, ${person.age}`)
+}
+
+observe(print);
+person.name = '李四';
+// 输出
+// 李四, 20
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>上面代码中，数据对象<code>person</code>是观察目标，函数<code>print</code>是观察者。一旦数据对象发生变化，<code>print</code>就会自动执行。</p> <p>下面，使用 Proxy 写一个观察者模式的最简单实现，即实现<code>observable</code>和<code>observe</code>这两个函数。思路是<code>observable</code>函数返回一个原始对象的 Proxy 代理，拦截赋值操作，触发充当观察者的各个函数。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const queuedObservers = new Set();
+
+const observe = fn =&gt; queuedObservers.add(fn);
+const observable = obj =&gt; new Proxy(obj, {set});
+
+function set(target, key, value, receiver) {
+  const result = Reflect.set(target, key, value, receiver);
+  queuedObservers.forEach(observer =&gt; observer());
+  return result;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>上面代码中，先定义了一个<code>Set</code>集合，所有观察者函数都放进这个集合。然后，<code>observable</code>函数返回原始对象的代理，拦截赋值操作。拦截函数<code>set</code>之中，会自动执行所有观察者。</p> <h3 id="留言"><a href="#留言" class="header-anchor">#</a> 留言</h3></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/29/2022, 7:39:19 AM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/langnang/assets/js/app.d31b4f67.js" defer></script><script src="/langnang/assets/js/3.4862c1a5.js" defer></script><script src="/langnang/assets/js/72.f3f769b7.js" defer></script>
+  </body>
+</html>
