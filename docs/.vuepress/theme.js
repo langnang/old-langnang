@@ -1,4 +1,4 @@
-
+const sidebar = require('./sidebar')
 module.exports = {
   /**
    * 当你使用自定义主题的时候，需要指定它。
@@ -61,10 +61,7 @@ module.exports = {
      * @type Array | Object
      * @default undefined
      */
-    sidebar: {
-      ...require('./../52010/sidebar.js'),
-      ...require('./../52040/sidebar.js'),
-    }
+    sidebar,
   },
   /**
    * 你可以通过 themeConfig.lastUpdated 选项来获取每个文件最后一次 git 提交的 UNIX 时间戳(ms)，同时它将以合适的日期格式显示在每一页的底部：

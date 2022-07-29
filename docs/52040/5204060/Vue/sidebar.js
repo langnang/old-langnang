@@ -3,6 +3,10 @@ module.exports = {
   path: '/52040/5204060/Vue/',
   children: [
     {
+      title: "面试题",
+      children: [],
+    },
+    {
       title: '参考手册',
       children: [
         {

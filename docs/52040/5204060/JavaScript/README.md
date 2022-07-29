@@ -11,7 +11,7 @@
 - `bind`
 - `ajax`
 
-## Noun 名称
+## Noun 名词
 
 - Hoisting 变量提升
 - [Closure 闭包](./Noun/Closure.md)
